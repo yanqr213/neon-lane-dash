@@ -267,7 +267,8 @@ h1 {
   font-weight: 900;
 }
 
-.platform-crazygames .external-tool-link {
+.platform-crazygames .external-tool-link,
+.platform-yandex .external-tool-link {
   display: none;
 }
 

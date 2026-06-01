@@ -39,7 +39,7 @@ Validate a zero-domain, no-sales monetization path by making Neon Lane Dash good
 
 - `reports/verification.json` status is `passed`.
 - `reports/analytics-verification.json` status is `passed`.
-- `reports/crazygames-verification.json` status is `passed`.
+- `reports/crazygames-verification.json` status is `passed` and covers CrazyGames plus Yandex SDK hooks.
 - `reports/smoke.json` status is `passed`.
 - `reports/platform-assets-verification.json` status is `passed`.
 - `reports/demo-video.json` status is `passed`.

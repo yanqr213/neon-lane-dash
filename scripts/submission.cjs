@@ -29,7 +29,7 @@ const submission = {
   monetization: {
     currentState: "Standalone build has ads disabled.",
     intendedPlatformAds:
-      "Rewarded ads may be used only for optional focus assist, retry, revive, or bonus time after platform approval. No gameplay button is disguised as an ad, and no user is asked to click ads.",
+      "Rewarded ads may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex ad calls are gated behind an explicit ads flag in the review build. No gameplay button is disguised as an ad, and no user is asked to click ads.",
     adSafety: [
       "No forced ad wall in the standalone build.",
       "No ad-click inducement copy.",
@@ -71,7 +71,12 @@ const submission = {
       name: "Neon Lane Dash",
       description:
         "Short mobile-friendly lane-dodging runs with simple controls, clear scoring, and optional platform-approved rewarded assists.",
-      monetizationNote: "Use platform-native ad SDK only after acceptance. Current upload package has no forced ads.",
+      monetizationNote: "Yandex SDK v2 is dynamically loaded only in Yandex context. LoadingAPI.ready and GameplayAPI start/stop hooks are present. showRewardedVideo and showFullscreenAdv calls are gated and disabled unless the platform context is ready and ads=1 is present.",
+      complianceNotes: [
+        "Standalone build does not request ads.",
+        "External submission-kit CTA is hidden in platform contexts.",
+        "The package is self-contained and uses relative local asset paths.",
+      ],
     },
     itchIo: {
       projectName: "Neon Lane Dash",

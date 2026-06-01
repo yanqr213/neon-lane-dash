@@ -34,7 +34,7 @@ Outputs:
 
 - `dist/`: static HTML5 game.
 - `reports/analytics-verification.json`: anonymous event and metrics verification.
-- `reports/crazygames-verification.json`: CrazyGames Basic Launch readiness checks.
+- `reports/crazygames-verification.json`: CrazyGames and Yandex Games SDK readiness checks.
 - `reports/neon-lane-dash-icon-512.png`: platform icon.
 - `reports/neon-lane-dash-cover-16x9.png`: platform cover image.
 - `reports/neon-lane-dash-social-card.png`: social preview card.
@@ -51,7 +51,7 @@ Outputs:
 
 1. Submit the HTML5 build to CrazyGames and Yandex Games first.
 2. Use platform review status and anonymous `/api/metrics` counts to test retention and feedback.
-3. Add platform-native ad calls only when the platform allows ads.
+3. Enable platform-native ad calls only when the platform allows ads.
 4. Use rewarded ads only for optional focus assist, retry, revive, or bonus time.
 5. Do not block basic gameplay behind ad viewing.
 6. Do not ask users to click ads or watch ads for external rewards.
