@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101820">
+    <title>Neon Lane Dash - Free HTML5 Reflex Game</title>
+    <meta name="description" content="Play Neon Lane Dash, a fast free HTML5 reflex game about switching lanes, collecting sparks, and dodging blockers in short arcade runs.">
+    <link rel="canonical" href="https://neon-lane-dash.pages.dev/">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Neon Lane Dash game">
+      <section class="topbar" aria-label="Game status">
+        <div class="brand-lockup">
+          <div class="logo-mark" aria-hidden="true">NL</div>
+          <div>
+            <p class="eyebrow">HTML5 arcade</p>
+            <h1>Neon Lane Dash</h1>
+          </div>
+        </div>
+        <div class="stat-grid" aria-live="polite">
+          <div class="stat">
+            <span>Score</span>
+            <strong id="scoreValue">0</strong>
+          </div>
+          <div class="stat">
+            <span>Combo</span>
+            <strong id="comboValue">x1</strong>
+          </div>
+          <div class="stat">
+            <span>Time</span>
+            <strong id="timeValue">45</strong>
+          </div>
+          <div class="stat">
+            <span>Shield</span>
+            <strong id="shieldValue">1</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage-wrap">
+        <canvas id="gameCanvas" width="1280" height="720" aria-label="Switch lanes to collect sparks and dodge blockers"></canvas>
+
+        <aside class="side-panel" aria-label="Game controls">
+          <div class="panel-section compact">
+            <p class="panel-kicker">Dash lane</p>
+            <h2 id="laneLabel">Center</h2>
+            <div class="lane-meter" aria-hidden="true">
+              <span id="laneDotA"></span>
+              <span id="laneDotB" class="active"></span>
+              <span id="laneDotC"></span>
+            </div>
+          </div>
+
+          <div class="panel-section lane-controls">
+            <button id="leftButton" class="lane-button">
+              <span class="lane-icon">L</span>
+              <span>Left</span>
+              <small>A or arrow</small>
+            </button>
+            <button id="rightButton" class="lane-button">
+              <span class="lane-icon">R</span>
+              <span>Right</span>
+              <small>D or arrow</small>
+            </button>
+          </div>
+
+          <div class="panel-section controls">
+            <button id="startButton" class="primary-button">Start Dash</button>
+            <button id="focusButton" class="secondary-button">Focus</button>
+            <button id="restartButton" class="secondary-button">Restart</button>
+          </div>
+
+          <div class="panel-section text-block">
+            <p>Switch lanes, collect sparks, avoid blockers. Keyboard: A/D or arrow keys. Touch: tap left or right. Focus slows the road for a moment.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="bottom-strip" aria-label="Validation and links">
+        <div>
+          <strong>Zero-domain monetization test</strong>
+          <span>Standalone review build. Ads are disabled; optional SDK hooks are gated until platform approval.</span>
+        </div>
+        <a class="external-tool-link" href="https://printable-tools-lab.pages.dev/share-kit/" target="_blank" rel="noopener">Submission kit</a>
+      </section>
+    </main>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <h2 id="modalTitle">Neon lane ready</h2>
+        <p id="modalBody">Collect sparks, dodge blockers, and keep the dash alive for a short arcade run.</p>
+        <div id="modalStats" class="modal-stats"></div>
+        <div class="modal-actions">
+          <button id="modalPrimary" class="primary-button">Play</button>
+          <button id="modalSecondary" class="secondary-button">Practice</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./platform.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>

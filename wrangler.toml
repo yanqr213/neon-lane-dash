@@ -1,0 +1,7 @@
+name = "neon-lane-dash"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-06-01"
+
+[[kv_namespaces]]
+binding = "NLD_EVENTS"
+id = "f7b33484c4634552966c51fe17a7981a"

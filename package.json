@@ -1,0 +1,24 @@
+{
+  "name": "neon-lane-dash",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A zero-domain HTML5 reflex arcade game prototype for platform ad validation.",
+  "scripts": {
+    "start": "node scripts/server.cjs",
+    "build": "node scripts/build.cjs",
+    "verify": "node scripts/verify.cjs",
+    "verify:analytics": "node scripts/verify-analytics.cjs",
+    "verify:crazygames": "node scripts/verify-crazygames.cjs",
+    "verify:assets": "node scripts/verify-platform-assets.cjs",
+    "smoke": "node scripts/smoke.cjs",
+    "submission": "node scripts/submission.cjs",
+    "assets:platform": "node scripts/platform-assets.cjs",
+    "demo:video": "node scripts/demo-video.cjs",
+    "release:assets": "node scripts/release-assets.cjs",
+    "verify:release": "node scripts/verify-release.cjs",
+    "package": "node scripts/package.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}

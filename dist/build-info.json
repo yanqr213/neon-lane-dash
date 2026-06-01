@@ -1,0 +1,12 @@
+{
+  "name": "Neon Lane Dash",
+  "generatedAt": "2026-06-01T23:37:44.553Z",
+  "platformTargets": [
+    "CrazyGames HTML5",
+    "Yandex Games HTML5",
+    "itch.io HTML5",
+    "static hosting",
+    "future Douyin mini-game port"
+  ],
+  "ads": "Rewarded and midgame ad hooks are adapter-only; no ads are forced in the standalone build."
+}

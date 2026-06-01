@@ -1,0 +1,17 @@
+{
+  "name": "Neon Lane Dash",
+  "short_name": "Lane Dash",
+  "description": "A fast free HTML5 reflex game about switching lanes, collecting sparks, and dodging blockers.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#101820",
+  "theme_color": "#101820",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

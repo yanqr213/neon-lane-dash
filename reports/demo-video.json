@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-06-01T23:37:49.813Z",
+  "sourceScreenshots": [
+    "reports\\mobile-smoke.png",
+    "reports\\desktop-smoke.png"
+  ],
+  "output": "reports\\neon-lane-dash-demo.mp4",
+  "bytes": 37131,
+  "status": "passed"
+}

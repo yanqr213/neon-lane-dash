@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-01T23:37:50.197Z",
+  "tarGzPackage": "reports\\neon-lane-dash-html5.tar.gz",
+  "zipPackage": "reports\\neon-lane-dash-html5.zip",
+  "tarGzBytes": 9474,
+  "zipBytes": 34015,
+  "files": [
+    "build-info.json",
+    "game.js",
+    "icon.svg",
+    "index.html",
+    "manifest.webmanifest",
+    "platform.js",
+    "styles.css"
+  ],
+  "uploadNotes": [
+    "For itch.io HTML5, upload the ZIP; it contains index.html at the archive root.",
+    "For CrazyGames, upload the dist contents or ZIP according to the developer dashboard prompt.",
+    "For Yandex Games, use the static build as the web archive and keep SDK-specific ads disabled until accepted.",
+    "Standalone build has no forced ad display; rewarded hooks are adapter-only."
+  ]
+}

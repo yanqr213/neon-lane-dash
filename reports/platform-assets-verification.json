@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-01T23:37:49.340Z",
+  "status": "passed",
+  "assets": [
+    {
+      "fileName": "neon-lane-dash-icon-512.png",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "fileName": "neon-lane-dash-cover-16x9.png",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "fileName": "neon-lane-dash-social-card.png",
+      "width": 1200,
+      "height": 630
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-06-01T23:37:45.113Z",
+  "status": "passed",
+  "checks": [
+    "CrazyGames SDK v3 dynamic loader",
+    "loading/gameplay lifecycle hooks",
+    "explicit ad gating",
+    "no watch-ad copy in Basic Launch build",
+    "external link hidden in CrazyGames context",
+    "relative paths and small package"
+  ],
+  "failures": []
+}

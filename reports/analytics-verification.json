@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-06-01T23:37:44.926Z",
+  "status": "passed",
+  "checks": [
+    "Cloudflare KV binding",
+    "event collector function",
+    "metrics function",
+    "remote browser event sender",
+    "gameplay outcome events",
+    "CTA event"
+  ],
+  "failures": []
+}

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-06-01T23:37:49.074Z",
+  "assets": [
+    {
+      "name": "neon-lane-dash-icon-512.png",
+      "label": "512x512 platform icon",
+      "path": "reports\\neon-lane-dash-icon-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 13445
+    },
+    {
+      "name": "neon-lane-dash-cover-16x9.png",
+      "label": "1280x720 platform cover",
+      "path": "reports\\neon-lane-dash-cover-16x9.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 40894
+    },
+    {
+      "name": "neon-lane-dash-social-card.png",
+      "label": "1200x630 social preview card",
+      "path": "reports\\neon-lane-dash-social-card.png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 38387
+    }
+  ]
+}
