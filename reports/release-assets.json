@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-06-01T23:39:13.580Z",
+  "releaseUrl": "https://github.com/yanqr213/neon-lane-dash/releases/tag/platform-submission-v1",
+  "tag": "platform-submission-v1",
+  "assets": [
+    {
+      "name": "neon-lane-dash-html5.zip",
+      "label": "HTML5 ZIP package for itch.io and platform upload",
+      "size": 34015,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip"
+    },
+    {
+      "name": "neon-lane-dash-demo.mp4",
+      "label": "8-second vertical gameplay demo MP4",
+      "size": 37131,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4"
+    },
+    {
+      "name": "platform-submission.md",
+      "label": "copy-ready platform submission notes",
+      "size": 2150,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission.md"
+    },
+    {
+      "name": "platform-submission.json",
+      "label": "machine-readable platform submission fields",
+      "size": 4976,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission.json"
+    },
+    {
+      "name": "neon-lane-dash-icon-512.png",
+      "label": "512x512 platform icon",
+      "size": 13445,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png"
+    },
+    {
+      "name": "neon-lane-dash-cover-16x9.png",
+      "label": "1280x720 platform cover image",
+      "size": 40894,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png"
+    },
+    {
+      "name": "neon-lane-dash-social-card.png",
+      "label": "1200x630 social preview card",
+      "size": 38387,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-social-card.png"
+    },
+    {
+      "name": "platform-assets.json",
+      "label": "platform image asset manifest",
+      "size": 729,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-assets.json"
+    },
+    {
+      "name": "crazygames-verification.json",
+      "label": "CrazyGames Basic Launch readiness checks",
+      "size": 348,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/crazygames-verification.json"
+    },
+    {
+      "name": "analytics-verification.json",
+      "label": "anonymous gameplay metrics verification",
+      "size": 274,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/analytics-verification.json"
+    },
+    {
+      "name": "smoke.json",
+      "label": "browser smoke verification",
+      "size": 323,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/smoke.json"
+    }
+  ]
+}
