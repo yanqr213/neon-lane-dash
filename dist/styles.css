@@ -85,9 +85,9 @@ h1 {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(86px, 1fr));
+  grid-template-columns: repeat(5, minmax(76px, 1fr));
   gap: 10px;
-  width: min(620px, 100%);
+  width: min(720px, 100%);
 }
 
 .stat {
