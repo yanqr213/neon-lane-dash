@@ -1,16 +1,19 @@
 # Neon Lane Dash Submission Copy Pack
 
-Generated: 2026-06-02T00:36:20.251Z
+Generated: 2026-06-02T00:55:49.824Z
 
 ## No-domain decision
 
 - Submit to CrazyGames first because it has a self-serve developer portal, platform-hosted distribution, SDK-based ads, and payout setup through Tipalti after revenue eligibility.
 - Submit to Yandex Games second because it supports platform catalog discovery, SDK-based ad monetization, and publisher-console metrics.
+- Submit to Playgama and GamePix after the first two direct platforms because both can distribute HTML5 games without a custom domain.
+- Use Lagged and GameFlare as secondary tests if primary moderation or account setup stalls.
 - Publish an itch.io mirror only as a free browser-play backup and feedback surface, not as the main advertising route.
 
 ## Parked routes
 
-- GameDistribution can be evaluated after the first two platforms because it is a revenue-share distributor, but it adds another SDK and lower control over downstream portals.
+- GameDistribution can be evaluated after the first four platforms because it is a revenue-share distributor, but it adds another SDK and lower control over downstream portals.
+- Poki is high-upside but later because it may require web-exclusive partnership terms and a stricter quality bar.
 - Douyin and Bilibili mini-game routes are not first because they require extra platform accounts, local mini-game packaging, domestic compliance review, and more account-side setup.
 
 ## 1. CrazyGames
@@ -143,6 +146,486 @@ Yandex SDK v2 is dynamically loaded only in Yandex context. LoadingAPI.ready and
 
 Standalone build does not request ads. External submission-kit CTA is hidden in platform contexts. The package is self-contained and uses relative local asset paths.
 
+## 3. Playgama
+
+Submission URL: https://developer.playgama.com/
+
+Monetization expectation: Playgama can distribute approved HTML5 games through partner platforms and supports ad/IAP monetization after its SDK or Bridge requirements are met.
+
+Source notes:
+
+- Developer account is required. Add Playgama Bridge only after the portal requests it.
+- Use the current HTML5 ZIP as a review package unless the platform explicitly requests its own SDK wrapper.
+- Standalone ads remain disabled; platform ad calls should be added only through a platform-specific adapter after approval.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+This build is a free browser-play validation package with no login, no in-app purchases, no forced ads, and desktop/mobile controls.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### sdkAndAdsNote
+
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+
+### complianceNote
+
+Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
+
+## 4. GamePix
+
+Submission URL: https://partners.gamepix.com/developers
+
+Monetization expectation: GamePix is a secondary distribution and hosting candidate with a published developer revenue-share model.
+
+Source notes:
+
+- Developer dashboard and SDK review are required before monetization.
+- Use the current HTML5 ZIP as a review package unless the platform explicitly requests its own SDK wrapper.
+- Standalone ads remain disabled; platform ad calls should be added only through a platform-specific adapter after approval.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+This build is a free browser-play validation package with no login, no in-app purchases, no forced ads, and desktop/mobile controls.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### sdkAndAdsNote
+
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+
+### complianceNote
+
+Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
+
+## 5. Lagged
+
+Submission URL: https://lagged.dev/
+
+Monetization expectation: Lagged is a simple HTML5 submission candidate with advertised revenue share through its developer dashboard.
+
+Source notes:
+
+- Submit only the ad-safe package and avoid ad-engagement inducement copy.
+- Use the current HTML5 ZIP as a review package unless the platform explicitly requests its own SDK wrapper.
+- Standalone ads remain disabled; platform ad calls should be added only through a platform-specific adapter after approval.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+This build is a free browser-play validation package with no login, no in-app purchases, no forced ads, and desktop/mobile controls.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### sdkAndAdsNote
+
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+
+### complianceNote
+
+Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
+
+## 6. GameFlare
+
+Submission URL: https://distribution.gameflare.com/developers/
+
+Monetization expectation: GameFlare is a lower-friction review candidate because it can review playable early-access HTML5 builds and monetizes with platform ads.
+
+Source notes:
+
+- Send the playable build or ZIP and keep ads controlled by the platform.
+- Use the current HTML5 ZIP as a review package unless the platform explicitly requests its own SDK wrapper.
+- Standalone ads remain disabled; platform ad calls should be added only through a platform-specific adapter after approval.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+This build is a free browser-play validation package with no login, no in-app purchases, no forced ads, and desktop/mobile controls.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### sdkAndAdsNote
+
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+
+### complianceNote
+
+Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
+
+## 7. GameDistribution
+
+Submission URL: https://gamedistribution.com/developers/
+
+Monetization expectation: GameDistribution is a later broad-network distributor candidate that likely needs a platform-specific SDK adapter.
+
+Source notes:
+
+- Do not enable GameDistribution ad calls until a separate adapter is built.
+- Use the current HTML5 ZIP as a review package unless the platform explicitly requests its own SDK wrapper.
+- Standalone ads remain disabled; platform ad calls should be added only through a platform-specific adapter after approval.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+This build is a free browser-play validation package with no login, no in-app purchases, no forced ads, and desktop/mobile controls.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### sdkAndAdsNote
+
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+
+### complianceNote
+
+Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
+
+## 8. Poki
+
+Submission URL: https://developers.poki.com/
+
+Monetization expectation: Poki is a later high-upside quality target, not the immediate route, because acceptance and possible web-exclusivity terms are higher friction.
+
+Source notes:
+
+- Do not submit broadly if a web-exclusive deal is required.
+- Use the current HTML5 ZIP as a review package unless the platform explicitly requests its own SDK wrapper.
+- Standalone ads remain disabled; platform ad calls should be added only through a platform-specific adapter after approval.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+This build is a free browser-play validation package with no login, no in-app purchases, no forced ads, and desktop/mobile controls.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### sdkAndAdsNote
+
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+
+### complianceNote
+
+Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
+
 ## 3. itch.io
 
 Submission URL: https://itch.io/game/new
@@ -218,6 +701,6 @@ Switch lanes, collect sparks, dodge blockers.
 
 - Use the HTML5 ZIP with index.html at the archive root.
 - Keep standalone ads disabled until the platform accepts or requests monetization activation.
-- Do not use ad-click inducement copy in titles, buttons, screenshots, or descriptions.
+- Do not use ad-engagement inducement copy in titles, buttons, screenshots, or descriptions.
 - Use platform SDK lifecycle hooks for loading and gameplay state.
 - Hide external links in CrazyGames and Yandex embedded contexts.

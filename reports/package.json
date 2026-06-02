@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-02T00:36:20.056Z",
+  "generatedAt": "2026-06-02T00:55:49.617Z",
   "tarGzPackage": "reports\\neon-lane-dash-html5.tar.gz",
   "zipPackage": "reports\\neon-lane-dash-html5.zip",
-  "tarGzBytes": 10110,
+  "tarGzBytes": 10112,
   "zipBytes": 38013,
   "files": [
     "build-info.json",
