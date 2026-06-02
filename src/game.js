@@ -51,13 +51,16 @@
     objects: [],
     particles: [],
     lastTick: 0,
+    platformPaused: false,
   };
 
   window.NeonLanePlatform.init();
 
-  function reset(practice = false) {
+  async function reset(practice = false) {
+    await requestBreakAd();
     state.running = true;
     state.paused = false;
+    state.platformPaused = false;
     state.over = false;
     state.score = 0;
     state.combo = 1;
@@ -239,6 +242,24 @@
       () => reset(false),
       () => reset(true)
     );
+  }
+
+  async function requestBreakAd() {
+    if (!window.NeonLanePlatform.adsAllowed()) return false;
+    const provider = window.NeonLanePlatform.state.provider;
+    const firstStart = !state.over && state.score === 0;
+    if (firstStart && provider !== "gamedistribution") return false;
+    state.paused = true;
+    await window.NeonLanePlatform.requestAd("interstitial", {
+      onUnavailable: () => {},
+      onError: () => {},
+    });
+    state.paused = false;
+  }
+
+  function setPlatformPaused(paused) {
+    state.platformPaused = paused;
+    state.paused = paused;
   }
 
   function draw(now) {
@@ -475,8 +496,6 @@
     ctx.closePath();
   }
 
-  modalPrimary.addEventListener("click", () => reset(false));
-  modalSecondary.addEventListener("click", () => reset(true));
   startButton.addEventListener("click", () => reset(false));
   restartButton.addEventListener("click", () => reset(false));
   focusButton.addEventListener("click", useFocus);
@@ -490,6 +509,8 @@
     if (key === " " || key === "f") useFocus();
     if (event.key === "Enter" && !state.running) reset(false);
   });
+  window.addEventListener("nld:platform-pause", () => setPlatformPaused(true));
+  window.addEventListener("nld:platform-resume", () => setPlatformPaused(false));
 
   showModal(
     "Neon lane ready",

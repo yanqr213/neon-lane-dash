@@ -1,6 +1,6 @@
 # Neon Lane Dash Platform Submission
 
-Generated: 2026-06-02T00:55:49.385Z
+Generated: 2026-06-02T15:32:31.348Z
 
 ## Game
 
@@ -27,7 +27,7 @@ Release pack: https://github.com/yanqr213/neon-lane-dash/releases/tag/platform-s
 
 Standalone build has ads disabled.
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 - No forced ad wall in the standalone build.
 - No ad-engagement inducement copy.

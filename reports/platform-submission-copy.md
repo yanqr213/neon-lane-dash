@@ -1,6 +1,6 @@
 # Neon Lane Dash Submission Copy Pack
 
-Generated: 2026-06-02T00:55:49.824Z
+Generated: 2026-06-02T15:32:31.737Z
 
 ## No-domain decision
 
@@ -220,7 +220,7 @@ https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission
 
 ### sdkAndAdsNote
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 ### complianceNote
 
@@ -300,7 +300,7 @@ https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission
 
 ### sdkAndAdsNote
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 ### complianceNote
 
@@ -380,7 +380,7 @@ https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission
 
 ### sdkAndAdsNote
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 ### complianceNote
 
@@ -460,7 +460,7 @@ https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission
 
 ### sdkAndAdsNote
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 ### complianceNote
 
@@ -540,7 +540,7 @@ https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission
 
 ### sdkAndAdsNote
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 ### complianceNote
 
@@ -620,7 +620,7 @@ https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission
 
 ### sdkAndAdsNote
 
-Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames and Yandex calls are gated behind an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
+Rewarded placements may be used only for optional focus assist, retry, revive, or bonus time after platform approval. CrazyGames, Yandex, Playgama, GamePix, and GameDistribution integrations are gated behind platform context checks; ad calls also require an explicit ads flag in the review build. Gameplay buttons are never disguised as monetization controls.
 
 ### complianceNote
 
