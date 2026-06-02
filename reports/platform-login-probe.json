@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-02T00:42:13.171Z",
+  "results": [
+    {
+      "name": "CrazyGames",
+      "startUrl": "https://developer.crazygames.com/",
+      "finalUrl": "https://developer.crazygames.com/",
+      "status": 200,
+      "title": "CrazyGames Developer Portal | Publish Unity and HTML5 web games and earn revenue",
+      "needsLogin": false,
+      "hasSubmissionClue": true,
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-login-probe\\crazygames.png",
+      "textSample": ""
+    },
+    {
+      "name": "Yandex Games",
+      "startUrl": "https://yandex.com/dev/games/",
+      "finalUrl": "https://yandex.com/dev/games/",
+      "status": 404,
+      "title": "404",
+      "needsLogin": false,
+      "hasSubmissionClue": true,
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-login-probe\\yandex-games.png",
+      "textSample": "\t\t\nSearch with Yandex AI\n404 Error. Page doesn't exist\nIf you think it's our fault that the page is not coming up, contact us.\nAbout Yandex© Yandex"
+    },
+    {
+      "name": "itch.io",
+      "startUrl": "https://itch.io/game/new",
+      "finalUrl": "https://itch.io/login",
+      "status": 403,
+      "title": "Just a moment...",
+      "needsLogin": true,
+      "hasSubmissionClue": false,
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-login-probe\\itch-io.png",
+      "textSample": "itch.io\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a0526aa7e89fd5ce\nPerformance and Security by Cloudflare\nPrivacy"
+    }
+  ]
+}
