@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-01T23:57:23.237Z",
+  "generatedAt": "2026-06-02T15:35:15.642Z",
   "releaseUrl": "https://github.com/yanqr213/neon-lane-dash/releases/tag/platform-submission-v1",
   "tag": "platform-submission-v1",
   "assets": [
     {
       "name": "neon-lane-dash-html5.zip",
       "label": "HTML5 ZIP package for itch.io and platform upload",
-      "size": 37090,
+      "size": 49058,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip"
     },
     {
@@ -18,14 +18,32 @@
     {
       "name": "platform-submission.md",
       "label": "copy-ready platform submission notes",
-      "size": 2240,
+      "size": 2327,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission.md"
     },
     {
       "name": "platform-submission.json",
       "label": "machine-readable platform submission fields",
-      "size": 5459,
+      "size": 7818,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission.json"
+    },
+    {
+      "name": "platform-submission-copy.md",
+      "label": "field-by-field copy pack for CrazyGames, Yandex Games, and itch.io",
+      "size": 24883,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission-copy.md"
+    },
+    {
+      "name": "platform-submission-copy.json",
+      "label": "machine-readable submission copy pack",
+      "size": 27645,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission-copy.json"
+    },
+    {
+      "name": "platform-submission-copy-verification.json",
+      "label": "submission copy safety and completeness verification",
+      "size": 88,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission-copy-verification.json"
     },
     {
       "name": "neon-lane-dash-icon-512.png",
@@ -54,7 +72,7 @@
     {
       "name": "crazygames-verification.json",
       "label": "CrazyGames Basic Launch readiness checks",
-      "size": 433,
+      "size": 706,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/crazygames-verification.json"
     },
     {
