@@ -1,0 +1,757 @@
+{
+  "generatedAt": "2026-06-02T15:08:56.334Z",
+  "results": [
+    {
+      "name": "GameDistribution",
+      "startUrl": "https://gamedistribution.com/developers/partnership/",
+      "finalUrl": "https://gamedistribution.com/developers/partnership/",
+      "status": 200,
+      "title": "Partnership - HTML5 Games for Websites and Messengers - GameDistribution",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-form-probe\\gamedistribution.png",
+      "formCount": 2,
+      "recaptcha": true,
+      "forms": [
+        {
+          "formIndex": 0,
+          "action": "https://gamedistribution.com/developers/partnership/",
+          "method": "get",
+          "id": "",
+          "className": "auth_authForm__C13K7 default-form",
+          "inputs": [
+            {
+              "index": 0,
+              "tag": "input",
+              "type": "text",
+              "name": "firstName",
+              "id": "firstName",
+              "placeholder": "Your first name",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 1,
+              "tag": "input",
+              "type": "text",
+              "name": "lastName",
+              "id": "lastName",
+              "placeholder": "Your last name",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 2,
+              "tag": "input",
+              "type": "text",
+              "name": "email",
+              "id": "email",
+              "placeholder": "Your email",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 3,
+              "tag": "button",
+              "type": "button",
+              "name": "",
+              "id": "headlessui-listbox-button-:r1:",
+              "placeholder": "",
+              "aria": "",
+              "text": "Select a country",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 4,
+              "tag": "input",
+              "type": "text",
+              "name": "",
+              "id": "",
+              "placeholder": "Search",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 5,
+              "tag": "input",
+              "type": "text",
+              "name": "company",
+              "id": "company",
+              "placeholder": "Company name",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 6,
+              "tag": "input",
+              "type": "text",
+              "name": "website",
+              "id": "website",
+              "placeholder": "yourwebsite.com",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 7,
+              "tag": "textarea",
+              "type": "",
+              "name": "g-recaptcha-response",
+              "id": "g-recaptcha-response",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 8,
+              "tag": "button",
+              "type": "",
+              "name": "",
+              "id": "",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 9,
+              "tag": "input",
+              "type": "checkbox",
+              "name": "terms",
+              "id": "terms_:r5:",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 10,
+              "tag": "input",
+              "type": "checkbox",
+              "name": "termsAzc",
+              "id": "termsAzc_:r6:",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 11,
+              "tag": "button",
+              "type": "submit",
+              "name": "",
+              "id": "",
+              "placeholder": "",
+              "aria": "",
+              "text": "Registration",
+              "required": false,
+              "disabled": false
+            }
+          ]
+        },
+        {
+          "formIndex": 1,
+          "action": "https://gamedistribution.com/developers/partnership/",
+          "method": "get",
+          "id": "",
+          "className": "auth_authForm__C13K7 default-form",
+          "inputs": [
+            {
+              "index": 0,
+              "tag": "input",
+              "type": "text",
+              "name": "firstName",
+              "id": "firstName",
+              "placeholder": "Your first name",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 1,
+              "tag": "input",
+              "type": "text",
+              "name": "lastName",
+              "id": "lastName",
+              "placeholder": "Your last name",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 2,
+              "tag": "input",
+              "type": "text",
+              "name": "email",
+              "id": "email",
+              "placeholder": "Your email",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 3,
+              "tag": "button",
+              "type": "button",
+              "name": "",
+              "id": "headlessui-listbox-button-:r7:",
+              "placeholder": "",
+              "aria": "",
+              "text": "Select a country",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 4,
+              "tag": "input",
+              "type": "text",
+              "name": "",
+              "id": "",
+              "placeholder": "Search",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 5,
+              "tag": "input",
+              "type": "text",
+              "name": "company",
+              "id": "company",
+              "placeholder": "Company name",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 6,
+              "tag": "input",
+              "type": "text",
+              "name": "website",
+              "id": "website",
+              "placeholder": "yourwebsite.com",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 7,
+              "tag": "textarea",
+              "type": "",
+              "name": "g-recaptcha-response",
+              "id": "g-recaptcha-response-1",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 8,
+              "tag": "button",
+              "type": "",
+              "name": "",
+              "id": "",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 9,
+              "tag": "input",
+              "type": "checkbox",
+              "name": "terms",
+              "id": "terms_:rb:",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 10,
+              "tag": "input",
+              "type": "checkbox",
+              "name": "termsAzc",
+              "id": "termsAzc_:rc:",
+              "placeholder": "",
+              "aria": "",
+              "text": "",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 11,
+              "tag": "button",
+              "type": "submit",
+              "name": "",
+              "id": "",
+              "placeholder": "",
+              "aria": "",
+              "text": "Registration",
+              "required": false,
+              "disabled": false
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "For Business",
+          "href": "https://gamedistribution.com/developers/partnership/",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "Login / Register",
+          "href": "",
+          "type": "submit"
+        },
+        {
+          "tag": "button",
+          "text": "Read more",
+          "href": "",
+          "type": "submit"
+        },
+        {
+          "tag": "button",
+          "text": "Start monetizing",
+          "href": "",
+          "type": "submit"
+        },
+        {
+          "tag": "a",
+          "text": "Developer Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "Registration",
+          "href": "",
+          "type": "submit"
+        },
+        {
+          "tag": "a",
+          "text": "GD guidelines",
+          "href": "https://gamedistribution.com/developers/quality-guidelines/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Developer Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "Registration",
+          "href": "",
+          "type": "submit"
+        },
+        {
+          "tag": "a",
+          "text": "partnership@azerion.com",
+          "href": "mailto:partnership@azerion.com",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Terms & Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Publisher Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/publisher.html",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Developer Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "List of Partners (vendors)",
+          "href": "",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "Apply",
+          "href": "",
+          "type": ""
+        }
+      ],
+      "textSample": "Games For Business News Support Dev Panel About Login / Register Monetize your Games +350M monthly gameplays +105 countries covered +90M new game plays every month Read more Start monetizing Access millions of users organically Most of our publishers work exclusively with GD Our publishers include web portals, media corporations and telecom companies. GD covers all Tier 1 and key emerging markets Our global network offers protection against regional market volatility. In-game statistics + feedback from GD’s expert teams Our QA and account teams offer insights to maximize returns. E Earn passively while +3,000 publishers in our network: 1 Attract high-volume organic traffic to their platforms 2 Look to feature high-quality games 3 Select games to match their audience’s interests ecosystem for publishers, developers and brands: 1 Ensures transparency through analytics and financial reporting 2 Sends you regular payments c creating your next game Studios These brands have already joined forces with us Join our hub of more than 1,000 developers First name * Last name * Email * Country * Select a country Company * Website I ACCEPT the Developer Terms and Conditions and Platform Privacy ",
+      "canAutoSubmitLikely": false
+    },
+    {
+      "name": "GamePix",
+      "startUrl": "https://partners.gamepix.com/developers",
+      "finalUrl": "https://partners.gamepix.com/developers",
+      "status": 200,
+      "title": "HTML5 Game Publishers | Monetize Your Games | GamePix",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-form-probe\\gamepix.png",
+      "formCount": 1,
+      "recaptcha": false,
+      "forms": [
+        {
+          "formIndex": 0,
+          "action": "https://partners.gamepix.com/developers",
+          "method": "get",
+          "id": "",
+          "className": "form-inline",
+          "inputs": [
+            {
+              "index": 0,
+              "tag": "button",
+              "type": "button",
+              "name": "",
+              "id": "",
+              "placeholder": "",
+              "aria": "",
+              "text": "LOGIN",
+              "required": false,
+              "disabled": false
+            },
+            {
+              "index": 1,
+              "tag": "button",
+              "type": "button",
+              "name": "",
+              "id": "",
+              "placeholder": "",
+              "aria": "",
+              "text": "Join Us",
+              "required": false,
+              "disabled": false
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://partners.gamepix.com/developers#home",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Games",
+          "href": "https://partners.gamepix.com/developers#games",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Developers",
+          "href": "https://partners.gamepix.com/developers#developers",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "SDK",
+          "href": "https://partners.gamepix.com/developers#sdk",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Publishers",
+          "href": "https://partners.gamepix.com/developers#publishers",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "RSS Feed",
+          "href": "https://partners.gamepix.com/rss-feed",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "LOGIN",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "button",
+          "text": "Join Us",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "button",
+          "text": "REGISTER AND PUBLISH YOUR GAME",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "button",
+          "text": "Submit your first game",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "a",
+          "text": "SDK",
+          "href": "https://partners.gamepix.com/sdk",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "JOIN US",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "button",
+          "text": "JOIN US",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "button",
+          "text": "Join Us",
+          "href": "",
+          "type": "button"
+        },
+        {
+          "tag": "a",
+          "text": "Games",
+          "href": "https://partners.gamepix.com/games",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Developers",
+          "href": "https://partners.gamepix.com/developers",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Publishers",
+          "href": "https://partners.gamepix.com/publishers",
+          "type": ""
+        }
+      ],
+      "textSample": "GAMES DEVELOPERS PUBLISHERS RSS FEED LOGIN JOIN US NEW AUDIENCES FOR YOUR GAMES Show your game to millions of new players on the web. Create your account, submit your game and start monetizing. REGISTER AND PUBLISH YOUR GAME Developer Partner Program Boost your revenues with GamePix GamePix is the ultimate platform for HTML5 game developer publishing. As a game developer, you will earn revenue shares while reaching and monetizing your games with millions of users. Join GamePix by registering on the GamePix Dashboard with a few clicks, integrate our lightweight SDK, and start submitting your first games. GamePix will host your games on secure servers, plus we will take care of optimization, Q&A, and your HTML5 games will go live on hundreds of certified partner sites. It's easier than App Store submissions, too. Ready to get rock-star exposure? Get your game seen and start making real money now! SUBMIT YOUR FIRST GAME BENEFITS FOR YOU EASY INTEGRATION Integrate GamePix's light SDK Submit your game with just a few clicks We take care of everything else! HASSLE-FREE LAUNCH We take care of code optimization Millions of gamers and high RPMs Approval and launch updates IP protection and ",
+      "canAutoSubmitLikely": false
+    },
+    {
+      "name": "Playgama",
+      "startUrl": "https://playgama.com/developers",
+      "finalUrl": "https://playgama.com/developers",
+      "status": 200,
+      "title": "Playgama for Developers: Maximize Your HTML5 Game Revenue",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-form-probe\\playgama.png",
+      "formCount": 0,
+      "recaptcha": false,
+      "forms": [],
+      "buttons": [
+        {
+          "tag": "button",
+          "text": "Join PlaygamaOur Discord",
+          "href": "",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Join Playgama",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "GameUpload",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Start Publishing",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Learn more",
+          "href": "https://developer.playgama.com/support?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Bridge Documentation",
+          "href": "https://wiki.playgama.com/playgama/sdk/getting-started",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Details",
+          "href": "https://playgama.com/developers/unity-build-optimization",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Sign up",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "our SDK",
+          "href": "https://wiki.playgama.com/playgama/sdk/getting-started?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "Join Playgama",
+          "href": "",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Join Playgama",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Submit your game",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Mail",
+          "href": "mailto:developer.success@playgama.com",
+          "type": ""
+        },
+        {
+          "tag": "button",
+          "text": "Join Us",
+          "href": "",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Join Us",
+          "href": "https://developer.playgama.com/auth?utm_source=landing",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Terms",
+          "href": "https://developer.playgama.com/terms",
+          "type": ""
+        },
+        {
+          "tag": "a",
+          "text": "Contact Us",
+          "href": "https://developer.playgama.com/support",
+          "type": ""
+        }
+      ],
+      "textSample": "FOR HTML5 GAME DEVELOPERS Earn more with Playgama: focus on your game, we handle the rest Publish once with Playgama Bridge and reach 450M+ players across YouTube Playables, MSN, and 100+ partner platforms. We run distribution, ads, and IAP — you keep building. Join Playgama Our Discord PRESS ABOUT US 1 Maximize your earnings You focus on developing your game — we handle the distribution, marketing, and monetization. 2 24-hour feedback & approval We test your game and provide personalized improvement recommendations within 24 hours. Game Upload Internal Testing Detailed Feedback Published on Playgama Submission to Partners Partners Feedback Published by Partners First Earnings 3 Support at every stage From the first touch to launch, we're here to help at every step. Creative assets & descriptions We craft eye-catching promotional materials and engaging descriptions to help your game shine on partner platforms. Zero Sign-Ups, Instant Access Forget registrations and identity checks: Playgama already holds master publisher accounts with Youtube, MSN, Xiaomi and dozens of other portals. Your game ships with full platform support and no extra paperwork Comprehensive Testing & Feedback W",
+      "canAutoSubmitLikely": false
+    }
+  ]
+}
