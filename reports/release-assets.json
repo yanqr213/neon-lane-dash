@@ -1,31 +1,43 @@
 {
-  "generatedAt": "2026-06-02T16:19:21.871Z",
+  "generatedAt": "2026-06-02T17:58:11.920Z",
   "releaseUrl": "https://github.com/yanqr213/neon-lane-dash/releases/tag/platform-submission-v1",
   "tag": "platform-submission-v1",
   "assets": [
     {
       "name": "neon-lane-dash-html5.zip",
       "label": "HTML5 ZIP package for itch.io and platform upload",
-      "size": 49058,
+      "size": 50838,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip"
     },
     {
       "name": "neon-lane-dash-portal-clean.zip",
       "label": "clean HTML5 ZIP for portals that ban third-party ad SDKs and external links",
-      "size": 29894,
+      "size": 30634,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip"
     },
     {
       "name": "clean-portal-package.json",
       "label": "clean portal package verification and upload notes",
-      "size": 2184,
+      "size": 2219,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/clean-portal-package.json"
     },
     {
       "name": "neon-lane-dash-demo.mp4",
       "label": "8-second vertical gameplay demo MP4",
-      "size": 37172,
+      "size": 37329,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4"
+    },
+    {
+      "name": "neon-lane-dash-crazygames-landscape-video.mp4",
+      "label": "CrazyGames landscape preview video MP4",
+      "size": 114487,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-crazygames-landscape-video.mp4"
+    },
+    {
+      "name": "neon-lane-dash-crazygames-portrait-video.mp4",
+      "label": "CrazyGames portrait preview video MP4",
+      "size": 35735,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-crazygames-portrait-video.mp4"
     },
     {
       "name": "platform-submission.md",
@@ -78,7 +90,7 @@
     {
       "name": "platform-assets.json",
       "label": "platform image asset manifest",
-      "size": 729,
+      "size": 1796,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-assets.json"
     },
     {
@@ -102,13 +114,13 @@
     {
       "name": "review-readiness.md",
       "label": "human-readable platform review readiness report",
-      "size": 3495,
+      "size": 3626,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/review-readiness.md"
     },
     {
       "name": "review-readiness.json",
       "label": "machine-readable platform review readiness report",
-      "size": 5512,
+      "size": 5705,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/review-readiness.json"
     }
   ]
