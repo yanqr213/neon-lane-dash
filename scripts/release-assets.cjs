@@ -12,6 +12,8 @@ const assets = [
   { file: "reports/neon-lane-dash-portal-clean.zip", label: "clean HTML5 ZIP for portals that ban third-party ad SDKs and external links" },
   { file: "reports/clean-portal-package.json", label: "clean portal package verification and upload notes" },
   { file: "reports/neon-lane-dash-demo.mp4", label: "8-second vertical gameplay demo MP4" },
+  { file: "reports/neon-lane-dash-crazygames-landscape-video.mp4", label: "CrazyGames landscape preview video MP4" },
+  { file: "reports/neon-lane-dash-crazygames-portrait-video.mp4", label: "CrazyGames portrait preview video MP4" },
   { file: "reports/platform-submission.md", label: "copy-ready platform submission notes" },
   { file: "reports/platform-submission.json", label: "machine-readable platform submission fields" },
   { file: "reports/platform-submission-copy.md", label: "field-by-field copy pack for CrazyGames, Yandex Games, Playgama, GamePix, GameDistribution, and fallback portals" },

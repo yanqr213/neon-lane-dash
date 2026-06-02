@@ -22,6 +22,34 @@ const assets = [
     label: "1280x720 platform cover",
   },
   {
+    name: "neon-lane-dash-crazygames-landscape-1920x1080.png",
+    width: 1920,
+    height: 1080,
+    svg: coverSvg,
+    label: "1920x1080 CrazyGames landscape cover",
+  },
+  {
+    name: "neon-lane-dash-crazygames-portrait-800x1200.png",
+    width: 800,
+    height: 1200,
+    svg: portraitCoverSvg,
+    label: "800x1200 CrazyGames portrait cover",
+  },
+  {
+    name: "neon-lane-dash-playgama-portrait-1080x1920.png",
+    width: 1080,
+    height: 1920,
+    svg: portraitCoverSvg,
+    label: "1080x1920 Playgama portrait cover",
+  },
+  {
+    name: "neon-lane-dash-crazygames-square-800x800.png",
+    width: 800,
+    height: 800,
+    svg: squareCoverSvg,
+    label: "800x800 CrazyGames square cover",
+  },
+  {
     name: "neon-lane-dash-social-card.png",
     width: 1200,
     height: 630,
@@ -94,6 +122,42 @@ function coverSvg(width, height) {
     ${spark(700, 438, "#38bdf8")}
     ${spark(1060, 416, "#ff5d8f")}
     ${blocker(880, 382)}
+  `);
+}
+
+function portraitCoverSvg(width, height) {
+  return baseSvg(width, height, `
+    <rect width="${width}" height="${height}" fill="#101820"/>
+    <rect x="48" y="48" width="${width - 96}" height="${height - 96}" rx="24" fill="#172334" stroke="#31445f" stroke-width="3"/>
+    <text x="${width / 2}" y="138" text-anchor="middle" font-size="27" font-weight="900" fill="#38bdf8">HTML5 REFLEX ARCADE</text>
+    <text x="${width / 2}" y="238" text-anchor="middle" font-size="76" font-weight="900" fill="#f7f3e8">Neon</text>
+    <text x="${width / 2}" y="322" text-anchor="middle" font-size="76" font-weight="900" fill="#f7f3e8">Lane Dash</text>
+    <text x="${width / 2}" y="384" text-anchor="middle" font-size="28" font-weight="750" fill="#b9c7d6">Collect sparks. Dodge blockers.</text>
+    ${lane(252, 706, "#38bdf8")}
+    ${lane(400, 706, "#34d399")}
+    ${lane(548, 706, "#ff5d8f")}
+    ${runner(400, 916)}
+    ${spark(252, 604, "#38bdf8")}
+    ${spark(548, 560, "#ff5d8f")}
+    ${blocker(400, 548)}
+    <rect x="136" y="1030" width="528" height="78" rx="16" fill="#34d399"/>
+    <text x="${width / 2}" y="1082" text-anchor="middle" font-size="31" font-weight="900" fill="#101820">Fast 45-second runs</text>
+  `);
+}
+
+function squareCoverSvg(width, height) {
+  return baseSvg(width, height, `
+    <rect width="${width}" height="${height}" fill="#101820"/>
+    <rect x="42" y="42" width="${width - 84}" height="${height - 84}" rx="24" fill="#172334" stroke="#31445f" stroke-width="3"/>
+    <text x="${width / 2}" y="128" text-anchor="middle" font-size="26" font-weight="900" fill="#38bdf8">REFLEX ARCADE</text>
+    <text x="${width / 2}" y="220" text-anchor="middle" font-size="68" font-weight="900" fill="#f7f3e8">Neon Lane</text>
+    <text x="${width / 2}" y="292" text-anchor="middle" font-size="68" font-weight="900" fill="#f7f3e8">Dash</text>
+    ${lane(254, 512, "#38bdf8")}
+    ${lane(400, 512, "#34d399")}
+    ${lane(546, 512, "#ff5d8f")}
+    ${runner(400, 650)}
+    ${spark(254, 440, "#38bdf8")}
+    ${blocker(546, 422)}
   `);
 }
 

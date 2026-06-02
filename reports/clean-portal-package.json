@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-02T16:16:04.191Z",
+  "generatedAt": "2026-06-02T17:51:28.879Z",
   "game": "Neon Lane Dash",
   "status": "passed",
   "buildDir": "dist-portal-clean",
   "zipPackage": "reports\\neon-lane-dash-portal-clean.zip",
   "tarGzPackage": "reports\\neon-lane-dash-portal-clean.tar.gz",
-  "zipBytes": 29894,
-  "tarGzBytes": 8334,
+  "zipBytes": 30634,
+  "tarGzBytes": 8525,
   "files": [
     "build-info.json",
     "game.js",
@@ -14,6 +14,7 @@
     "index.html",
     "manifest.webmanifest",
     "platform.js",
+    "playgama-bridge-config.json",
     "styles.css"
   ],
   "intendedFor": [

@@ -93,7 +93,10 @@ function writeCleanIndex() {
   const filePath = path.join(out, "index.html");
   let html = fs.readFileSync(filePath, "utf8");
   html = html.replace(/\s*<link rel="canonical" href="[^"]+">/, "");
-  html = html.replace(/<span>Standalone review build\. Ads are disabled; optional SDK hooks are gated until platform approval\.<\/span>/, `<span>${config.cleanText}</span>`);
+  html = html.replace(
+    /(<strong>Zero-domain monetization test<\/strong>\s*)<span>[\s\S]*?<\/span>/,
+    `$1<span>${config.cleanText}</span>`
+  );
   html = html.replace(/\s*<a class="external-tool-link"[\s\S]*?<\/a>/, "");
   fs.writeFileSync(filePath, html);
 }

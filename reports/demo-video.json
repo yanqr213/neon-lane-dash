@@ -1,10 +1,31 @@
 {
-  "generatedAt": "2026-06-01T23:55:59.381Z",
+  "generatedAt": "2026-06-02T16:45:33.223Z",
   "sourceScreenshots": [
     "reports\\mobile-smoke.png",
     "reports\\desktop-smoke.png"
   ],
-  "output": "reports\\neon-lane-dash-demo.mp4",
-  "bytes": 37172,
+  "outputs": [
+    {
+      "label": "legacy vertical demo video",
+      "output": "reports\\neon-lane-dash-demo.mp4",
+      "width": 720,
+      "height": 1280,
+      "bytes": 37329
+    },
+    {
+      "label": "CrazyGames landscape preview video",
+      "output": "reports\\neon-lane-dash-crazygames-landscape-video.mp4",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 114487
+    },
+    {
+      "label": "CrazyGames portrait preview video",
+      "output": "reports\\neon-lane-dash-crazygames-portrait-video.mp4",
+      "width": 720,
+      "height": 1080,
+      "bytes": 35735
+    }
+  ],
   "status": "passed"
 }

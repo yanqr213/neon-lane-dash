@@ -55,6 +55,7 @@
   };
 
   window.NeonLanePlatform.init();
+  syncPlatformBestScore();
 
   async function reset(practice = false) {
     await requestBreakAd();
@@ -439,8 +440,25 @@
     } catch {
       // Best score is local-only and optional.
     }
+    window.NeonLanePlatform.setStoredBestScore?.(bestKey, next);
     updateHud();
     return { value: next, isNew };
+  }
+
+  async function syncPlatformBestScore() {
+    try {
+      const stored = await window.NeonLanePlatform.getStoredBestScore?.(bestKey);
+      if (stored === null || stored === undefined) return;
+      state.best = Math.max(state.best, Number(stored) || 0);
+      try {
+        localStorage.setItem(bestKey, String(state.best));
+      } catch {
+        // Local best-score cache is optional.
+      }
+      updateHud();
+    } catch {
+      // Platform storage is best-effort; local score remains available.
+    }
   }
 
   function updateHud() {
@@ -520,7 +538,7 @@
     [
       ["Keys", "A/D"],
       ["Goal", "45s"],
-      ["Ads", "Disabled"],
+      ["Ads", "Platform"],
     ],
     () => reset(false),
     () => reset(true)

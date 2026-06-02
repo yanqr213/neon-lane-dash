@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T23:55:58.643Z",
+  "generatedAt": "2026-06-02T16:59:04.716Z",
   "assets": [
     {
       "name": "neon-lane-dash-icon-512.png",
@@ -16,6 +16,38 @@
       "width": 1280,
       "height": 720,
       "bytes": 40894
+    },
+    {
+      "name": "neon-lane-dash-crazygames-landscape-1920x1080.png",
+      "label": "1920x1080 CrazyGames landscape cover",
+      "path": "reports\\neon-lane-dash-crazygames-landscape-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 46305
+    },
+    {
+      "name": "neon-lane-dash-crazygames-portrait-800x1200.png",
+      "label": "800x1200 CrazyGames portrait cover",
+      "path": "reports\\neon-lane-dash-crazygames-portrait-800x1200.png",
+      "width": 800,
+      "height": 1200,
+      "bytes": 44266
+    },
+    {
+      "name": "neon-lane-dash-playgama-portrait-1080x1920.png",
+      "label": "1080x1920 Playgama portrait cover",
+      "path": "reports\\neon-lane-dash-playgama-portrait-1080x1920.png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 50315
+    },
+    {
+      "name": "neon-lane-dash-crazygames-square-800x800.png",
+      "label": "800x800 CrazyGames square cover",
+      "path": "reports\\neon-lane-dash-crazygames-square-800x800.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 26934
     },
     {
       "name": "neon-lane-dash-social-card.png",

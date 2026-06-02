@@ -7,6 +7,10 @@ const reports = path.join(root, "reports");
 const expected = [
   ["neon-lane-dash-icon-512.png", 512, 512],
   ["neon-lane-dash-cover-16x9.png", 1280, 720],
+  ["neon-lane-dash-crazygames-landscape-1920x1080.png", 1920, 1080],
+  ["neon-lane-dash-crazygames-portrait-800x1200.png", 800, 1200],
+  ["neon-lane-dash-playgama-portrait-1080x1920.png", 1080, 1920],
+  ["neon-lane-dash-crazygames-square-800x800.png", 800, 800],
   ["neon-lane-dash-social-card.png", 1200, 630],
 ];
 const failures = [];

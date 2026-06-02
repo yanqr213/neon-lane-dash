@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T16:16:00.232Z",
+  "generatedAt": "2026-06-02T17:51:22.590Z",
   "status": "passed",
   "assets": [
     {
@@ -11,6 +11,26 @@
       "fileName": "neon-lane-dash-cover-16x9.png",
       "width": 1280,
       "height": 720
+    },
+    {
+      "fileName": "neon-lane-dash-crazygames-landscape-1920x1080.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "fileName": "neon-lane-dash-crazygames-portrait-800x1200.png",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "fileName": "neon-lane-dash-playgama-portrait-1080x1920.png",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "fileName": "neon-lane-dash-crazygames-square-800x800.png",
+      "width": 800,
+      "height": 800
     },
     {
       "fileName": "neon-lane-dash-social-card.png",

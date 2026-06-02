@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-02T16:16:03.996Z",
+  "generatedAt": "2026-06-02T17:51:28.676Z",
   "tarGzPackage": "reports\\neon-lane-dash-html5.tar.gz",
   "zipPackage": "reports\\neon-lane-dash-html5.zip",
-  "tarGzBytes": 12088,
-  "zipBytes": 49058,
+  "tarGzBytes": 12437,
+  "zipBytes": 50838,
   "files": [
     "build-info.json",
     "game.js",
@@ -11,6 +11,7 @@
     "index.html",
     "manifest.webmanifest",
     "platform.js",
+    "playgama-bridge-config.json",
     "styles.css"
   ],
   "uploadNotes": [
