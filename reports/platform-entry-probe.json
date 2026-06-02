@@ -1,0 +1,599 @@
+{
+  "generatedAt": "2026-06-02T15:00:14.750Z",
+  "results": [
+    {
+      "name": "Playgama",
+      "startUrl": "https://playgama.com/developers",
+      "finalUrl": "https://playgama.com/developers",
+      "status": 200,
+      "title": "Playgama for Developers: Maximize Your HTML5 Game Revenue",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\playgama.png",
+      "needsLogin": true,
+      "hasContact": true,
+      "hasRevenue": true,
+      "hasUpload": true,
+      "mailto": [
+        {
+          "text": "Mail",
+          "href": "mailto:developer.success@playgama.com"
+        }
+      ],
+      "likelyLinks": [
+        {
+          "text": "Join Playgama",
+          "href": "https://developer.playgama.com/auth?utm_source=landing"
+        },
+        {
+          "text": "",
+          "href": "https://gamedevjsweekly.com/589"
+        },
+        {
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-"
+        },
+        {
+          "text": "",
+          "href": "https://www.gamemakers.com/p/the-html5-gaming-gold-rush-discord"
+        },
+        {
+          "text": "",
+          "href": "https://www.bloomberg.com/news/articles/2025-11-07/video-games-hottest-new-platform-is-an-old-one-websites"
+        },
+        {
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/"
+        },
+        {
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/"
+        },
+        {
+          "text": "",
+          "href": "https://gamedevjsweekly.com/589"
+        },
+        {
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-"
+        },
+        {
+          "text": "",
+          "href": "https://www.gamemakers.com/p/the-html5-gaming-gold-rush-discord"
+        },
+        {
+          "text": "",
+          "href": "https://www.bloomberg.com/news/articles/2025-11-07/video-games-hottest-new-platform-is-an-old-one-websites"
+        },
+        {
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/"
+        },
+        {
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/"
+        },
+        {
+          "text": "",
+          "href": "https://gamedevjsweekly.com/589"
+        },
+        {
+          "text": "",
+          "href": "https://www.gamedeveloper.com/business/the-huge-hidden-web-game-market-no-one-talks-about-and-how-to-get-in-"
+        },
+        {
+          "text": "",
+          "href": "https://www.gamemakers.com/p/the-html5-gaming-gold-rush-discord"
+        },
+        {
+          "text": "",
+          "href": "https://www.bloomberg.com/news/articles/2025-11-07/video-games-hottest-new-platform-is-an-old-one-websites"
+        },
+        {
+          "text": "",
+          "href": "https://gamesbeat.com/playgama-launches-green-web-game-jam-with-un-partnership/"
+        },
+        {
+          "text": "",
+          "href": "https://www.pocketgamer.biz/our-ultimate-goal-is-to-make-web-gaming-seamless-scalable-and-more-accessible-for-developers-worldwide/"
+        },
+        {
+          "text": "",
+          "href": "https://gamedevjsweekly.com/589"
+        }
+      ],
+      "forms": [],
+      "textSample": "FOR HTML5 GAME DEVELOPERS Earn more with Playgama: focus on your game, we handle the rest Publish once with Playgama Bridge and reach 450M+ players across YouTube Playables, MSN, and 100+ partner platforms. We run distribution, ads, and IAP — you keep building. Join Playgama Our Discord PRESS ABOUT US 1 Maximize your earnings You focus on developing your game — we handle the distribution, marketing, and monetization. 2 24-hour feedback & approval We test your game and provide personalized improvement recommendations within 24 hours. Game Upload Internal Testing Detailed Feedback Published on Playgama Submission to Partners Partners Feedback Published by Partners First Earnings 3 Support at every stage From the first touch to launch, we're here to help at every step. Creative assets & descriptions We craft eye-catching promotional materials and engaging descriptions to help your game shin"
+    },
+    {
+      "name": "Playgama Developer Portal",
+      "startUrl": "https://developer.playgama.com/",
+      "finalUrl": "https://developer.playgama.com/auth?redirect=/",
+      "status": 200,
+      "title": "Login to Playgama Developer Dashboard",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\playgama-developer-portal.png",
+      "needsLogin": true,
+      "hasContact": false,
+      "hasRevenue": true,
+      "hasUpload": false,
+      "mailto": [],
+      "likelyLinks": [
+        {
+          "text": "",
+          "href": "https://developer.playgama.com/"
+        },
+        {
+          "text": "Who are you?",
+          "href": "https://developer.playgama.com/account"
+        },
+        {
+          "text": "",
+          "href": "https://developer.playgama.com/"
+        },
+        {
+          "text": "Login/Sign up",
+          "href": "https://developer.playgama.com/auth"
+        },
+        {
+          "text": "Support",
+          "href": "https://developer.playgama.com/support"
+        },
+        {
+          "text": "SDK",
+          "href": "https://wiki.playgama.com/playgama/sdk/getting-started"
+        },
+        {
+          "text": "About",
+          "href": "https://playgama.com/developers"
+        },
+        {
+          "text": "Terms & Conditions",
+          "href": "https://developer.playgama.com/terms"
+        }
+      ],
+      "forms": [
+        {
+          "action": "https://developer.playgama.com/auth?redirect=/",
+          "method": "get",
+          "inputs": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "",
+              "placeholder": "Enter your email",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "password",
+              "name": "",
+              "placeholder": "••••••••",
+              "aria": ""
+            }
+          ]
+        }
+      ],
+      "textSample": "Terms & Conditions © 2024-2026 Playgama Welcome to Playgama Sign Up Or Continue with Google Already have an account?Log in You Build — We Help Your Game Find Its Players Trusted by devs in 42 countries One SDK → 450 M players Play-testing & in-depth feedback with tailored distribution Single payout across all platforms Access to web-games market analytics"
+    },
+    {
+      "name": "GamePix",
+      "startUrl": "https://partners.gamepix.com/developers",
+      "finalUrl": "https://partners.gamepix.com/developers",
+      "status": 200,
+      "title": "HTML5 Game Publishers | Monetize Your Games | GamePix",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\gamepix.png",
+      "needsLogin": true,
+      "hasContact": true,
+      "hasRevenue": true,
+      "hasUpload": true,
+      "mailto": [],
+      "likelyLinks": [
+        {
+          "text": "",
+          "href": "https://partners.gamepix.com/developers#home"
+        },
+        {
+          "text": "Games",
+          "href": "https://partners.gamepix.com/developers#games"
+        },
+        {
+          "text": "Developers",
+          "href": "https://partners.gamepix.com/developers#developers"
+        },
+        {
+          "text": "SDK",
+          "href": "https://partners.gamepix.com/developers#sdk"
+        },
+        {
+          "text": "Publishers",
+          "href": "https://partners.gamepix.com/developers#publishers"
+        },
+        {
+          "text": "RSS Feed",
+          "href": "https://partners.gamepix.com/rss-feed"
+        },
+        {
+          "text": "SDK",
+          "href": "https://partners.gamepix.com/sdk"
+        },
+        {
+          "text": "Games",
+          "href": "https://partners.gamepix.com/games"
+        },
+        {
+          "text": "Developers",
+          "href": "https://partners.gamepix.com/developers"
+        },
+        {
+          "text": "Publishers",
+          "href": "https://partners.gamepix.com/publishers"
+        }
+      ],
+      "forms": [
+        {
+          "action": "https://partners.gamepix.com/developers",
+          "method": "get",
+          "inputs": []
+        }
+      ],
+      "textSample": "GAMES DEVELOPERS PUBLISHERS RSS FEED LOGIN JOIN US NEW AUDIENCES FOR YOUR GAMES Show your game to millions of new players on the web. Create your account, submit your game and start monetizing. REGISTER AND PUBLISH YOUR GAME Developer Partner Program Boost your revenues with GamePix GamePix is the ultimate platform for HTML5 game developer publishing. As a game developer, you will earn revenue shares while reaching and monetizing your games with millions of users. Join GamePix by registering on the GamePix Dashboard with a few clicks, integrate our lightweight SDK, and start submitting your first games. GamePix will host your games on secure servers, plus we will take care of optimization, Q&A, and your HTML5 games will go live on hundreds of certified partner sites. It's easier than App Store submissions, too. Ready to get rock-star exposure? Get your game seen and start making real mon"
+    },
+    {
+      "name": "Lagged",
+      "startUrl": "https://lagged.dev/",
+      "finalUrl": "https://lagged.dev/",
+      "status": 200,
+      "title": "Lagged Developer Dashboard - Reach Millions of Gamers Online",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\lagged.png",
+      "needsLogin": true,
+      "hasContact": true,
+      "hasRevenue": true,
+      "hasUpload": true,
+      "mailto": [],
+      "likelyLinks": [
+        {
+          "text": "Lagged Developer dashboard",
+          "href": "https://lagged.dev/"
+        },
+        {
+          "text": "Login",
+          "href": "https://lagged.dev/login"
+        },
+        {
+          "text": "Join Now",
+          "href": "https://lagged.dev/signup"
+        }
+      ],
+      "forms": [],
+      "textSample": "Lagged Developer dashboard SDK Docs Login Expand Reach & Earn Reach 20 million gamers on the web. Earn 50% revenue share with Google Adsense. Join Now Scroll Expand Reach Reach 20 million gamers on the web. Submit your games to Lagged.com and start earning today! Google Adsense Official Google Adsense partner. Transparent reporting and payments from Google. Easy SDK Easy to use JavaScript SDK, Unity Plugin, Construct 3 Addon and more. Implement interstitials, reward ads, achievements and more. Submit your brain teasers, quizzes and puzzles to BrainPlay. © Lagged.com · Logos / Branding .zip"
+    },
+    {
+      "name": "GameFlare",
+      "startUrl": "https://distribution.gameflare.com/developers/",
+      "finalUrl": "https://distribution.gameflare.com/developers/",
+      "status": 403,
+      "title": "Just a moment...",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\gameflare.png",
+      "needsLogin": false,
+      "hasContact": false,
+      "hasRevenue": false,
+      "hasUpload": false,
+      "mailto": [],
+      "likelyLinks": [],
+      "forms": [],
+      "textSample": "distribution.gameflare.com Performing security verification This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot. Ray ID: a0575362efbac515 Performance and Security by Cloudflare Privacy"
+    },
+    {
+      "name": "GameDistribution",
+      "startUrl": "https://gamedistribution.com/developers/",
+      "finalUrl": "https://gamedistribution.com/developers/partnership/",
+      "status": 200,
+      "title": "Partnership - HTML5 Games for Websites and Messengers - GameDistribution",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\gamedistribution.png",
+      "needsLogin": true,
+      "hasContact": true,
+      "hasRevenue": true,
+      "hasUpload": true,
+      "mailto": [
+        {
+          "text": "partnership@azerion.com",
+          "href": "mailto:partnership@azerion.com"
+        }
+      ],
+      "likelyLinks": [
+        {
+          "text": "",
+          "href": "https://gamedistribution.com/"
+        },
+        {
+          "text": "Games",
+          "href": "https://gamedistribution.com/games/"
+        },
+        {
+          "text": "For Business",
+          "href": "https://gamedistribution.com/developers/partnership/"
+        },
+        {
+          "text": "News",
+          "href": "https://blog.gamedistribution.com/"
+        },
+        {
+          "text": "Support",
+          "href": "https://gamedistribution.com/support/"
+        },
+        {
+          "text": "Dev Panel",
+          "href": "https://gamedistribution.com/dev-panel/"
+        },
+        {
+          "text": "About",
+          "href": "https://gamedistribution.com/about/"
+        },
+        {
+          "text": "",
+          "href": "https://gamedistribution.com/"
+        },
+        {
+          "text": "Developer Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html"
+        },
+        {
+          "text": "Platform Privacy Policy",
+          "href": "https://static.gamedistribution.com/policy/privacy-platform.html"
+        },
+        {
+          "text": "link",
+          "href": "https://gamedistribution.com/"
+        },
+        {
+          "text": "GD guidelines",
+          "href": "https://gamedistribution.com/developers/quality-guidelines/"
+        },
+        {
+          "text": "Developer Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html"
+        },
+        {
+          "text": "Platform Privacy Policy",
+          "href": "https://static.gamedistribution.com/policy/privacy-platform.html"
+        },
+        {
+          "text": "Terms & Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html"
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/gamedistribution/?viewAsMember=true"
+        },
+        {
+          "text": "Privacy policy",
+          "href": "https://static.gamedistribution.com/policy/privacy-enduser.html"
+        },
+        {
+          "text": "Platform Privacy policy",
+          "href": "https://static.gamedistribution.com/policy/privacy-platform.html"
+        },
+        {
+          "text": "Publisher Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/publisher.html"
+        },
+        {
+          "text": "Developer Terms and Conditions",
+          "href": "https://static.gamedistribution.com/terms/developer.html"
+        }
+      ],
+      "forms": [
+        {
+          "action": "https://gamedistribution.com/developers/partnership/",
+          "method": "get",
+          "inputs": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "firstName",
+              "placeholder": "Your first name",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "lastName",
+              "placeholder": "Your last name",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "email",
+              "placeholder": "Your email",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "",
+              "placeholder": "Search",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "company",
+              "placeholder": "Company name",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "website",
+              "placeholder": "yourwebsite.com",
+              "aria": ""
+            },
+            {
+              "tag": "textarea",
+              "type": "",
+              "name": "g-recaptcha-response",
+              "placeholder": "",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "terms",
+              "placeholder": "",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "termsAzc",
+              "placeholder": "",
+              "aria": ""
+            }
+          ]
+        },
+        {
+          "action": "https://gamedistribution.com/developers/partnership/",
+          "method": "get",
+          "inputs": [
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "firstName",
+              "placeholder": "Your first name",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "lastName",
+              "placeholder": "Your last name",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "email",
+              "placeholder": "Your email",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "",
+              "placeholder": "Search",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "company",
+              "placeholder": "Company name",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "website",
+              "placeholder": "yourwebsite.com",
+              "aria": ""
+            },
+            {
+              "tag": "textarea",
+              "type": "",
+              "name": "g-recaptcha-response",
+              "placeholder": "",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "terms",
+              "placeholder": "",
+              "aria": ""
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "termsAzc",
+              "placeholder": "",
+              "aria": ""
+            }
+          ]
+        }
+      ],
+      "textSample": "Games For Business News Support Dev Panel About Login / Register Monetize your Games +350M monthly gameplays +105 countries covered +90M new game plays every month Read more Start monetizing Access millions of users organically Most of our publishers work exclusively with GD Our publishers include web portals, media corporations and telecom companies. GD covers all Tier 1 and key emerging markets Our global network offers protection against regional market volatility. In-game statistics + feedback from GD’s expert teams Our QA and account teams offer insights to maximize returns. E Earn passively while +3,000 publishers in our network: 1 Attract high-volume organic traffic to their platforms 2 Look to feature high-quality games 3 Select games to match their audience’s interests ecosystem for publishers, developers and brands: 1 Ensures transparency through analytics and financial reporti"
+    },
+    {
+      "name": "Poki Developers",
+      "startUrl": "https://developers.poki.com/",
+      "finalUrl": "https://developers.poki.com/",
+      "status": 200,
+      "title": "Poki for Developers - Turn your game into a hit",
+      "screenshotPath": "E:\\Documents\\New project\\independent-apps\\neon-lane-dash\\reports\\platform-entry-probe\\poki-developers.png",
+      "needsLogin": true,
+      "hasContact": true,
+      "hasRevenue": true,
+      "hasUpload": false,
+      "mailto": [],
+      "likelyLinks": [
+        {
+          "text": "",
+          "href": "https://developers.poki.com/"
+        },
+        {
+          "text": "Developer Guide",
+          "href": "https://developers.poki.com/guide"
+        },
+        {
+          "text": "",
+          "href": "https://developers.poki.com/"
+        },
+        {
+          "text": "ui-icons-best-practicesDeveloper Guide",
+          "href": "https://developers.poki.com/guide"
+        },
+        {
+          "text": "ui-icons-loginSign In",
+          "href": "https://app.poki.dev/signin/"
+        },
+        {
+          "text": "ui-icons-best-practicesDeveloper Guide",
+          "href": "https://developers.poki.com/guide"
+        },
+        {
+          "text": "Join us",
+          "href": "https://developers.poki.com/share"
+        },
+        {
+          "text": "Terms of Use",
+          "href": "https://app.poki.dev/2024.03.13_Terms_and_Conditions_Poki_for_Developers.pdf"
+        },
+        {
+          "text": "Get started",
+          "href": "https://developers.poki.com/share"
+        },
+        {
+          "text": "Apply now",
+          "href": "https://developers.poki.com/share"
+        },
+        {
+          "text": "Run your first playtest",
+          "href": "https://developers.poki.com/share"
+        },
+        {
+          "text": "Start testing",
+          "href": "https://developers.poki.com/share"
+        },
+        {
+          "text": "Let's build",
+          "href": "https://developers.poki.com/guide"
+        },
+        {
+          "text": "Terms Of Use",
+          "href": "https://app.poki.dev/2024.03.13_Terms_and_Conditions_Poki_for_Developers.pdf"
+        }
+      ],
+      "forms": [],
+      "textSample": "Developer Guide Sign In Turn your game into a hit Leverage the power of the web and our developer friendly tools to take your game from concept to hit and skyrocket it to success. Get started The #1 on web in 100+ countries Poki is the leading web gaming platform, powered by a community of 500+ game developers. 100 million monthly players €100,000+ in earnings per active developer in 2024 Reach the world, maximize your revenue When you're ready for the spotlight, we'll showcase your game to millions of daily players, boosting visibility and earnings across all devices. Apply now Instant feedback for free Poki Playtesting allows you to experience your game through the eyes of real players in no time. Leverage real player data and analytics to unlock your game's full potential. Run your first playtest From concept to hit Test. Evaluate. Iterate. The web lets you move fast. Use our tools to"
+    }
+  ]
+}
