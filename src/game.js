@@ -18,7 +18,9 @@
   const comboValue = document.getElementById("comboValue");
   const timeValue = document.getElementById("timeValue");
   const shieldValue = document.getElementById("shieldValue");
+  const bestValue = document.getElementById("bestValue");
   const laneLabel = document.getElementById("laneLabel");
+  const bestKey = "neon-lane-dash-best";
 
   const lanes = [
     { id: 0, label: "Left", x: 390, color: "#38bdf8" },
@@ -45,6 +47,7 @@
     dodges: 0,
     sparks: 0,
     hits: 0,
+    best: readBestScore(),
     objects: [],
     particles: [],
     lastTick: 0,
@@ -218,17 +221,20 @@
       dodges: state.dodges,
       hits: state.hits,
     });
+    const best = saveBestScore(state.score);
     showModal(
       cleared ? "Dash complete" : "Lane crashed",
-      cleared
+      best.isNew
+        ? "New best score. One cleaner run can push the combo even higher."
+        : cleared
         ? "Clean finish. Replay for a faster, higher-combo run."
         : "One more run is usually enough to beat the last score.",
       "Play again",
       "Practice",
       [
         ["Score", state.score],
+        ["Best", state.best],
         ["Sparks", state.sparks],
-        ["Dodges", state.dodges],
       ],
       () => reset(false),
       () => reset(true)
@@ -395,11 +401,33 @@
     state.particles.push({ x, y: y - 48, text, color, life: 1 });
   }
 
+  function readBestScore() {
+    try {
+      return Math.max(0, Number(localStorage.getItem(bestKey) || 0));
+    } catch {
+      return 0;
+    }
+  }
+
+  function saveBestScore(score) {
+    const next = Math.max(state.best, Number(score || 0));
+    const isNew = next > state.best;
+    state.best = next;
+    try {
+      localStorage.setItem(bestKey, String(next));
+    } catch {
+      // Best score is local-only and optional.
+    }
+    updateHud();
+    return { value: next, isNew };
+  }
+
   function updateHud() {
     scoreValue.textContent = String(state.score);
     comboValue.textContent = `x${state.combo}`;
     timeValue.textContent = String(Math.max(0, Math.ceil(state.timeLeft)));
     shieldValue.textContent = String(state.shields);
+    bestValue.textContent = String(state.best);
     laneLabel.textContent = lanes[state.targetLane].label;
     laneDots.forEach((dot, index) => dot.classList.toggle("active", index === state.targetLane));
   }
