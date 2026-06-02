@@ -20,6 +20,8 @@
     "demo:video": "node scripts/demo-video.cjs",
     "release:assets": "node scripts/release-assets.cjs",
     "verify:release": "node scripts/verify-release.cjs",
+    "package:gamesnacks": "node scripts/gamesnacks-package.cjs",
+    "verify:gamesnacks": "node scripts/verify-gamesnacks.cjs",
     "package": "node scripts/package.cjs && npm run package:clean && npm run submission:copy && npm run verify:submission"
   },
   "devDependencies": {

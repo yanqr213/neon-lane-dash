@@ -17,6 +17,7 @@ assert(platform.includes("yandex.ru/games/sdk/v2"), "Yandex Games SDK dynamic lo
 assert(platform.includes("bridge.playgama.com/v1/stable/playgama-bridge.js"), "Playgama Bridge dynamic loader is missing.");
 assert(platform.includes("gamepix.blob.core.windows.net/gpxlib/dev/gamepix.js"), "GamePix SDK dynamic loader is missing.");
 assert(platform.includes("html5.api.gamedistribution.com/main.min.js"), "GameDistribution SDK dynamic loader is missing.");
+assert(platform.includes("GameSnacks") && platform.includes("ad.break") && platform.includes("firstFrameReady"), "GameSnacks adapter hooks are missing.");
 assert(platform.includes("gameplayStart") && platform.includes("gameplayStop"), "Gameplay start/stop hooks are missing.");
 assert(platform.includes("loadingStop"), "Loading stop hook is missing.");
 assert(platform.includes("LoadingAPI") && platform.includes("ready"), "Yandex LoadingAPI ready hook is missing.");
@@ -41,6 +42,7 @@ assert(css.includes(".platform-yandex .external-tool-link"), "Yandex context sho
 assert(css.includes(".platform-playgama .external-tool-link"), "Playgama context should hide external tool link.");
 assert(css.includes(".platform-gamepix .external-tool-link"), "GamePix context should hide external tool link.");
 assert(css.includes(".platform-gamedistribution .external-tool-link"), "GameDistribution context should hide external tool link.");
+assert(css.includes(".platform-gamesnacks .external-tool-link"), "GameSnacks context should hide external tool link.");
 assert(game.includes("platform-pause") && game.includes("platform-resume"), "Game should pause/resume on platform events.");
 assert(html.includes("Keyboard: A/D") && html.toLowerCase().includes("touch"), "Keyboard/touch control copy is incomplete.");
 assert(html.includes("./platform.js") && html.includes("./game.js"), "Scripts should use relative paths.");
@@ -68,6 +70,7 @@ const report = {
     "Playgama rewarded completion and lifecycle hooks",
     "GamePix lifecycle/ping hooks",
     "GameDistribution gameId, pause, resume, and rewarded hooks",
+    "GameSnacks game, ad, storage, audio, and score hooks",
     "explicit ad gating",
     "no watch-ad copy in Basic Launch build",
     "external link hidden in platform contexts",

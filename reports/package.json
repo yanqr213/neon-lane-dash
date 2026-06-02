@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-02T17:51:28.676Z",
+  "generatedAt": "2026-06-02T19:37:52.372Z",
   "tarGzPackage": "reports\\neon-lane-dash-html5.tar.gz",
   "zipPackage": "reports\\neon-lane-dash-html5.zip",
-  "tarGzBytes": 12437,
-  "zipBytes": 50838,
+  "tarGzBytes": 13244,
+  "zipBytes": 55807,
   "files": [
     "build-info.json",
     "game.js",

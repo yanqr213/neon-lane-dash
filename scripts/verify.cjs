@@ -29,12 +29,13 @@ assert(html.includes("Neon Lane Dash"), "Game name is missing.");
 assert(html.includes("rel=\"canonical\""), "Canonical URL is missing.");
 assert(html.includes("platform.js") && html.includes("game.js"), "Scripts are not loaded.");
 assert(css.includes("@media (max-width: 620px)"), "Mobile layout rules are missing.");
-assert(html.includes("id=\"bestValue\"") && game.includes("localStorage") && game.includes("bestKey"), "Best score loop is missing.");
-assert(platform.includes("getStoredBestScore") && platform.includes("storage.get") && platform.includes("setStoredBestScore") && platform.includes("storage.set"), "Platform best-score storage hooks are missing.");
+assert(html.includes("id=\"bestValue\"") && game.includes("bestKey") && game.includes("syncPlatformBestScore"), "Best score loop is missing.");
+assert(platform.includes("getStoredBestScore") && platform.includes("setStoredBestScore") && platform.includes("readLocalValue") && platform.includes("writeLocalValue"), "Best-score storage hooks and local fallback are missing.");
 assert(game.includes("requestAd(\"rewarded\""), "Rewarded ad hook is missing.");
 assert(game.includes("run_start") && game.includes("run_end"), "Local event hooks are missing.");
 assert(game.includes("spark_collect") && game.includes("blocker_hit"), "Core gameplay events are missing.");
-assert(platform.includes("CrazyGames") && platform.includes("onUnavailable"), "Platform adapter is incomplete.");
+assert(platform.includes("CrazyGames") && platform.includes("GameSnacks") && platform.includes("onUnavailable"), "Platform adapter is incomplete.");
+assert(!game.includes("localStorage"), "Game logic should not directly use browser storage.");
 assert(!html.toLowerCase().includes("click ads") && !game.toLowerCase().includes("click ads"), "Unsafe ad-click copy found.");
 
 if (failures.length) {

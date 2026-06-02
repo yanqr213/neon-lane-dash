@@ -4,7 +4,10 @@
   const PLAYGAMA_BRIDGE_URL = "https://bridge.playgama.com/v1/stable/playgama-bridge.js";
   const GAMEPIX_SDK_URL = "https://gamepix.blob.core.windows.net/gpxlib/dev/gamepix.js";
   const GAMEDISTRIBUTION_SDK_URL = "https://html5.api.gamedistribution.com/main.min.js";
+  const LOCAL_EVENT_KEY = "neon-lane-dash-events";
   let initPromise = null;
+  let firstFrameSent = false;
+  let readySent = false;
   const state = {
     ready: false,
     provider: "local",
@@ -19,6 +22,7 @@
   if (isPlaygamaContext()) document.documentElement.classList.add("platform-playgama");
   if (isGamePixContext()) document.documentElement.classList.add("platform-gamepix");
   if (isGameDistributionContext()) document.documentElement.classList.add("platform-gamedistribution");
+  if (isGameSnacksContext()) document.documentElement.classList.add("platform-gamesnacks");
 
   function init() {
     if (!initPromise) initPromise = initSdk();
@@ -26,11 +30,29 @@
   }
 
   async function initSdk() {
+    if (isGameSnacksContext() || window.GameSnacks) return initGameSnacks();
     if (isCrazyGamesContext() || window.CrazyGames?.SDK) return initCrazyGames();
     if (isYandexContext() || window.YaGames) return initYandexGames();
     if (isPlaygamaContext() || window.bridge) return initPlaygama();
     if (isGamePixContext() || window.GamePix) return initGamePix();
     if (isGameDistributionContext() || window.gdsdk) return initGameDistribution();
+    return state;
+  }
+
+  async function initGameSnacks() {
+    if (!window.GameSnacks) return state;
+    state.provider = "gamesnacks";
+    state.sdk = window.GameSnacks;
+    try {
+      window.GameSnacks.game?.onPause?.(() => window.dispatchEvent(new CustomEvent("nld:platform-pause")));
+      window.GameSnacks.game?.onResume?.(() => window.dispatchEvent(new CustomEvent("nld:platform-resume")));
+      window.GameSnacks.audio?.subscribe?.((enabled) => {
+        window.dispatchEvent(new CustomEvent(enabled ? "nld:platform-audio-on" : "nld:platform-audio-off"));
+      });
+      state.ready = true;
+    } catch (error) {
+      console.warn("GameSnacks SDK setup failed", error);
+    }
     return state;
   }
 
@@ -156,6 +178,7 @@
     if (state.provider === "playgama") return requestPlaygamaAd(kind, callbacks);
     if (state.provider === "gamepix") return requestGamePixAd(kind, callbacks);
     if (state.provider === "gamedistribution") return requestGameDistributionAd(kind, callbacks);
+    if (state.provider === "gamesnacks") return requestGameSnacksAd(kind, callbacks);
     if (!state.ready || !state.sdk?.ad?.requestAd) {
       callbacks.onUnavailable?.();
       return false;
@@ -314,6 +337,52 @@
     }
   }
 
+  function requestGameSnacksAd(kind, callbacks = {}) {
+    if (!state.ready || !state.sdk?.ad?.break) {
+      callbacks.onUnavailable?.();
+      return Promise.resolve(false);
+    }
+    return new Promise((resolve) => {
+      let settled = false;
+      let rewarded = kind !== "rewarded";
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        callbacks.onFinish?.();
+        resolve(Boolean(rewarded));
+      };
+      const timeout = setTimeout(finish, kind === "rewarded" ? 120000 : 90000);
+      const settle = () => {
+        clearTimeout(timeout);
+        finish();
+      };
+      try {
+        state.sdk.ad.break({
+          type: kind === "rewarded" ? "reward" : "next",
+          name: kind === "rewarded" ? "focus_assist" : "run_break",
+          beforeReward: (showAdFn) => {
+            callbacks.onStart?.();
+            if (typeof showAdFn === "function") showAdFn();
+          },
+          beforeAd: () => callbacks.onStart?.(),
+          afterAd: settle,
+          adViewed: () => {
+            rewarded = true;
+            callbacks.onRewarded?.();
+          },
+          adDismissed: () => {
+            rewarded = false;
+          },
+          adBreakDone: settle,
+        });
+      } catch (error) {
+        clearTimeout(timeout);
+        callbacks.onError?.(error);
+        resolve(false);
+      }
+    });
+  }
+
   function track(eventName, payload = {}) {
     const event = {
       eventName,
@@ -321,16 +390,17 @@
       at: new Date().toISOString(),
       provider: state.provider,
     };
-    try {
-      const key = "neon-lane-dash-events";
-      const events = JSON.parse(localStorage.getItem(key) || "[]");
-      events.push(event);
-      localStorage.setItem(key, JSON.stringify(events.slice(-50)));
-    } catch {
-      // Local analytics are best-effort for platform review builds.
+    if (state.provider !== "gamesnacks") {
+      try {
+        const events = JSON.parse(readLocalValue(LOCAL_EVENT_KEY) || "[]");
+        events.push(event);
+        writeLocalValue(LOCAL_EVENT_KEY, JSON.stringify(events.slice(-50)));
+      } catch {
+        // Local analytics are best-effort for platform review builds.
+      }
     }
     reportPlatformEvent(eventName, payload);
-    sendRemoteEvent(eventName, payload);
+    if (state.provider !== "gamesnacks") sendRemoteEvent(eventName, payload);
     window.dispatchEvent(new CustomEvent("nld:event", { detail: event }));
   }
 
@@ -340,6 +410,18 @@
         window.GamePix.game.ping("game_over", { score: Number(payload.score || 0), level: "main", achievements: {} });
       } catch {
         // Platform analytics are best-effort in review builds.
+      }
+    }
+    if (state.provider === "gamesnacks") {
+      try {
+        if (eventName === "run_end") {
+          const score = Number(payload.score || 0);
+          state.sdk?.score?.update?.(score);
+          state.sdk?.game?.gameOver?.();
+          if (score > 0) state.sdk?.game?.levelComplete?.(1);
+        }
+      } catch {
+        // GameSnacks telemetry is best-effort.
       }
     }
   }
@@ -396,6 +478,7 @@
 
   async function gameplayStart() {
     await init();
+    signalGameReady();
     if (state.provider === "playgama" && state.sdk?.platform?.sendMessage) {
       try {
         await state.sdk.platform.sendMessage("level_started");
@@ -456,26 +539,52 @@
 
   async function getStoredBestScore(key) {
     await init();
-    if (state.provider !== "playgama" || !state.sdk?.storage?.get) return null;
+    if (state.provider === "gamesnacks" && state.sdk?.storage?.getItem) {
+      try {
+        const value = state.sdk.storage.getItem(key);
+        if (value === null || value === undefined || value === "") return 0;
+        return Math.max(0, Number(value) || 0);
+      } catch (error) {
+        console.warn("GameSnacks storage read failed", error);
+        return 0;
+      }
+    }
+    if (state.provider !== "playgama" || !state.sdk?.storage?.get) {
+      const value = readLocalValue(key);
+      if (value === null || value === undefined || value === "") return 0;
+      return Math.max(0, Number(value) || 0);
+    }
     try {
       const value = await state.sdk.storage.get(key);
-      if (value === null || value === undefined || value === "") return null;
+      if (value === null || value === undefined || value === "") return Math.max(0, Number(readLocalValue(key) || 0));
       return Math.max(0, Number(value) || 0);
     } catch (error) {
       console.warn("Playgama storage read failed", error);
-      return null;
+      return Math.max(0, Number(readLocalValue(key) || 0));
     }
   }
 
   async function setStoredBestScore(key, value) {
     await init();
-    if (state.provider !== "playgama" || !state.sdk?.storage?.set) return false;
+    if (state.provider === "gamesnacks" && state.sdk?.storage?.setItem) {
+      try {
+        state.sdk.storage.setItem(key, String(Math.max(0, Number(value) || 0)));
+        return true;
+      } catch (error) {
+        console.warn("GameSnacks storage write failed", error);
+        return false;
+      }
+    }
+    if (state.provider !== "playgama" || !state.sdk?.storage?.set) {
+      return writeLocalValue(key, String(Math.max(0, Number(value) || 0)));
+    }
     try {
       await state.sdk.storage.set(key, String(Math.max(0, Number(value) || 0)));
+      writeLocalValue(key, String(Math.max(0, Number(value) || 0)));
       return true;
     } catch (error) {
       console.warn("Playgama storage write failed", error);
-      return false;
+      return writeLocalValue(key, String(Math.max(0, Number(value) || 0)));
     }
   }
 
@@ -514,6 +623,13 @@
     return host.includes("gamedistribution") || referrer.includes("gamedistribution") || params.get("platform") === "gamedistribution" || params.get("gd_sdk") === "1" || params.has("gd_game_id");
   }
 
+  function isGameSnacksContext() {
+    const host = window.location.hostname || "";
+    const referrer = document.referrer || "";
+    const params = new URLSearchParams(window.location.search);
+    return host.includes("gamesnacks") || referrer.includes("gamesnacks") || params.get("platform") === "gamesnacks" || Boolean(window.GameSnacks);
+  }
+
   function gameDistributionGameId() {
     const params = new URLSearchParams(window.location.search);
     return params.get("gd_game_id") || params.get("gameId") || "";
@@ -548,8 +664,48 @@
   function adsAllowed() {
     const params = new URLSearchParams(window.location.search);
     if (!state.ready || params.get("ads") === "0") return false;
+    if (state.provider === "gamesnacks") return true;
     if (state.provider === "playgama") return true;
     return params.get("ads") === "1";
+  }
+
+  function signalFirstFrameReady() {
+    if (firstFrameSent || state.provider !== "gamesnacks") return false;
+    firstFrameSent = true;
+    try {
+      state.sdk?.game?.firstFrameReady?.();
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function signalGameReady() {
+    if (readySent || state.provider !== "gamesnacks") return false;
+    readySent = true;
+    try {
+      state.sdk?.game?.ready?.();
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function readLocalValue(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  }
+
+  function writeLocalValue(key, value) {
+    try {
+      localStorage.setItem(key, value);
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   window.NeonLanePlatform = {
@@ -561,6 +717,8 @@
     setStoredBestScore,
     adsAllowed,
     track,
+    signalFirstFrameReady,
+    signalGameReady,
     state,
   };
   setTimeout(() => track("page_view", { target: "game" }), 0);

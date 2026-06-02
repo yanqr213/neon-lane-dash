@@ -1,13 +1,13 @@
 # Neon Lane Dash Review Readiness
 
-Generated: 2026-06-02T17:52:38.669Z
+Generated: 2026-06-02T19:41:19.334Z
 Status: passed
 Live URL: https://neon-lane-dash.pages.dev/
 
 ## Summary
 
-- Checks: 30
-- Passed: 30
+- Checks: 33
+- Passed: 33
 - Failed: 0
 
 ## Checks
@@ -18,18 +18,20 @@ Live URL: https://neon-lane-dash.pages.dev/
 - PASS canvas_game_surface: Canvas game loop is present.
 - PASS keyboard_and_touch_controls: Control copy covers A/D, arrow, touch, Focus.
 - PASS modal_start_flow: Start/restart modal is wired.
-- PASS local_best_score: Local best-score persistence is present.
-- PASS platform_best_score_storage: Playgama SDK storage is used for best-score sync with local fallback.
+- PASS local_best_score: Best-score persistence is isolated in the platform adapter.
+- PASS platform_best_score_storage: Playgama and GameSnacks SDK storage are used for best-score sync with local fallback.
 - PASS anonymous_metrics: Anonymous event telemetry is local-first and API-backed.
 - PASS no_secret_literals: Source does not contain obvious API keys, account tokens, or payment credentials.
 - PASS no_server_dependency_in_zip: Upload package contains only static dist files.
 - PASS zip_package_small: HTML5 ZIP is present and below the review-size budget.
 - PASS clean_portal_package_passed: Clean portal ZIP passed third-party SDK, remote tracking, external link, and ad-call checks.
 - PASS clean_portal_zip_small: Clean portal ZIP is present and below the review-size budget.
+- PASS gamesnacks_package_passed: GameSnacks package passed SDK, storage, no-external-request, and marketing-asset checks.
+- PASS gamesnacks_zip_small: GameSnacks ZIP is present and below the review-size budget.
 - PASS standalone_ads_disabled: Standalone build does not show ads; Playgama SDK context can run certified platform ads.
 - PASS no_ad_inducement_copy: Game copy avoids ad-click or watch-ad inducement.
 - PASS platform_external_link_hidden: External CTA is hidden in embedded platform contexts.
-- PASS sdk_adapters_present: CrazyGames, Yandex, Playgama, GamePix, and GameDistribution adapters are present.
+- PASS sdk_adapters_present: CrazyGames, Yandex, Playgama, GamePix, GameDistribution, and GameSnacks adapters are present.
 - PASS platform_lifecycle_hooks: Loading, gameplay start/stop, pause/resume, and ready lifecycle hooks are present.
 - PASS rewarded_ads_safe: Rewarded benefits require provider completion callbacks before granting assist rewards.
 - PASS gamedistribution_game_id_gate: GameDistribution requires dashboard gameId or query parameter.
@@ -42,6 +44,7 @@ Live URL: https://neon-lane-dash.pages.dev/
 - PASS asset_report_passed: Platform icon, cover, and social assets passed verification.
 - PASS release_assets_include_zip: GitHub release includes the HTML5 ZIP asset.
 - PASS release_assets_include_demo: GitHub release includes the gameplay demo MP4.
+- PASS release_assets_include_gamesnacks_zip: GitHub release includes the GameSnacks ZIP asset.
 
 ## Platform Fit
 
@@ -50,6 +53,7 @@ Live URL: https://neon-lane-dash.pages.dev/
 - Rewarded assists are optional and only granted after platform reward completion callbacks.
 - External links are hidden when embedded by game platforms.
 - A separate clean portal ZIP is available for portals that reject third-party ad SDKs, external links, or remote telemetry.
+- A separate GameSnacks ZIP is available with GameSnacks SDK storage, ad, audio, score, and lifecycle hooks only.
 
 ## Manual Gates
 

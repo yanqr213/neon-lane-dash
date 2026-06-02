@@ -53,6 +53,7 @@ const reports = {
   assets: readJson("reports/platform-assets-verification.json"),
   package: readJson("reports/package.json"),
   cleanPackage: readJson("reports/clean-portal-package.json"),
+  gameSnacks: readJson("reports/gamesnacks-verification.json"),
   release: readJson("reports/release-assets.json"),
 };
 
@@ -64,18 +65,20 @@ check("viewport_ready", src.html.includes('name="viewport"') && src.css.includes
 check("canvas_game_surface", src.html.includes("<canvas") && src.game.includes("requestAnimationFrame") && src.game.includes("getContext(\"2d\")"), "Canvas game loop is present.");
 check("keyboard_and_touch_controls", controlsPresent(), `Control copy covers ${config.primaryControls.join(", ")}.`);
 check("modal_start_flow", src.html.includes('role="dialog"') && src.html.includes("modalPrimary") && src.game.includes("reset(false)"), "Start/restart modal is wired.");
-check("local_best_score", src.game.includes("localStorage") && src.game.includes("best"), "Local best-score persistence is present.");
-check("platform_best_score_storage", src.platform.includes("storage.get") && src.platform.includes("storage.set") && src.game.includes("syncPlatformBestScore"), "Playgama SDK storage is used for best-score sync with local fallback.");
+check("local_best_score", src.platform.includes("readLocalValue") && src.platform.includes("writeLocalValue") && src.game.includes("best"), "Best-score persistence is isolated in the platform adapter.");
+check("platform_best_score_storage", src.platform.includes("storage.get") && src.platform.includes("storage.set") && src.platform.includes("storage.getItem") && src.platform.includes("storage.setItem") && src.game.includes("syncPlatformBestScore"), "Playgama and GameSnacks SDK storage are used for best-score sync with local fallback.");
 check("anonymous_metrics", src.platform.includes("sendBeacon") && src.platform.includes("/api/event") && src.platform.includes(config.eventKey), "Anonymous event telemetry is local-first and API-backed.");
 check("no_secret_literals", noSecrets(), "Source does not contain obvious API keys, account tokens, or payment credentials.");
 check("no_server_dependency_in_zip", packageHasOnlyStaticFiles(), "Upload package contains only static dist files.");
 check("zip_package_small", zipSmallEnough(), "HTML5 ZIP is present and below the review-size budget.");
 check("clean_portal_package_passed", reports.cleanPackage?.status === "passed", "Clean portal ZIP passed third-party SDK, remote tracking, external link, and ad-call checks.");
 check("clean_portal_zip_small", cleanZipSmallEnough(), "Clean portal ZIP is present and below the review-size budget.");
+check("gamesnacks_package_passed", reports.gameSnacks?.status === "passed", "GameSnacks package passed SDK, storage, no-external-request, and marketing-asset checks.");
+check("gamesnacks_zip_small", gameSnacksZipSmallEnough(), "GameSnacks ZIP is present and below the review-size budget.");
 check("standalone_ads_disabled", standaloneAdsDisabled(), "Standalone build does not show ads; Playgama SDK context can run certified platform ads.");
 check("no_ad_inducement_copy", noAdInducement(), "Game copy avoids ad-click or watch-ad inducement.");
 check("platform_external_link_hidden", platformExternalLinksHidden(), "External CTA is hidden in embedded platform contexts.");
-check("sdk_adapters_present", sdkAdaptersPresent(), "CrazyGames, Yandex, Playgama, GamePix, and GameDistribution adapters are present.");
+check("sdk_adapters_present", sdkAdaptersPresent(), "CrazyGames, Yandex, Playgama, GamePix, GameDistribution, and GameSnacks adapters are present.");
 check("platform_lifecycle_hooks", lifecycleHooksPresent(), "Loading, gameplay start/stop, pause/resume, and ready lifecycle hooks are present.");
 check("rewarded_ads_safe", rewardedAdsSafe(), "Rewarded benefits require provider completion callbacks before granting assist rewards.");
 check("gamedistribution_game_id_gate", src.platform.includes("gd_game_id") && !src.platform.includes('gameId: "test"'), "GameDistribution requires dashboard gameId or query parameter.");
@@ -88,6 +91,7 @@ check("analytics_report_passed", reports.analytics?.status === "passed", "Analyt
 check("asset_report_passed", reports.assets?.status === "passed", "Platform icon, cover, and social assets passed verification.");
 check("release_assets_include_zip", releaseIncludes(`${config.slug}-html5.zip`), "GitHub release includes the HTML5 ZIP asset.");
 check("release_assets_include_demo", releaseIncludes(`${config.slug}-demo.mp4`), "GitHub release includes the gameplay demo MP4.");
+check("release_assets_include_gamesnacks_zip", releaseIncludes(`${config.slug}-gamesnacks.zip`), "GitHub release includes the GameSnacks ZIP asset.");
 
 const failed = checks.filter((item) => !item.passed);
 const report = {
@@ -107,13 +111,14 @@ const report = {
     "Rewarded assists are optional and only granted after platform reward completion callbacks.",
     "External links are hidden when embedded by game platforms.",
     "A separate clean portal ZIP is available for portals that reject third-party ad SDKs, external links, or remote telemetry.",
+    "A separate GameSnacks ZIP is available with GameSnacks SDK storage, ad, audio, score, and lifecycle hooks only.",
   ],
   manualGates: [
     "Developer dashboard signup, email verification, CAPTCHA, legal consent, and payout setup still require the account owner.",
     "Platform acceptance, ad eligibility, real plays, and verified revenue are the money gate.",
     "Do not send bank, Alipay, API token, or private credential details by email.",
   ],
-  nextSubmissionOrder: ["CrazyGames", "Yandex Games", "Playgama", "GamePix", "GameDistribution"],
+  nextSubmissionOrder: ["GameSnacks", "CrazyGames", "Yandex Games", "Playgama", "GamePix", "GameDistribution"],
 };
 
 fs.mkdirSync(reportsDir, { recursive: true });
@@ -163,6 +168,11 @@ function cleanZipSmallEnough() {
   return fs.existsSync(zipPath) && fs.statSync(zipPath).size > 1000 && fs.statSync(zipPath).size < 750000;
 }
 
+function gameSnacksZipSmallEnough() {
+  const zipPath = path.join(root, "reports", `${config.slug}-gamesnacks.zip`);
+  return fs.existsSync(zipPath) && fs.statSync(zipPath).size > 1000 && fs.statSync(zipPath).size < 2500000;
+}
+
 function standaloneAdsDisabled() {
   return src.platform.includes("adsAllowed") &&
     src.platform.includes('params.get("ads") === "0"') &&
@@ -179,7 +189,7 @@ function noAdInducement() {
 }
 
 function platformExternalLinksHidden() {
-  return ["crazygames", "yandex", "playgama", "gamepix", "gamedistribution"].every((platform) =>
+  return ["crazygames", "yandex", "playgama", "gamepix", "gamedistribution", "gamesnacks"].every((platform) =>
     src.css.includes(`.platform-${platform} .external-tool-link`)
   );
 }
@@ -191,6 +201,7 @@ function sdkAdaptersPresent() {
     "bridge.playgama.com/v1/stable/playgama-bridge.js",
     "gamepix.blob.core.windows.net/gpxlib/dev/gamepix.js",
     "html5.api.gamedistribution.com/main.min.js",
+    "GameSnacks",
   ].every((needle) => src.platform.includes(needle));
 }
 
@@ -202,6 +213,8 @@ function lifecycleHooksPresent() {
     src.platform.includes("gameLoading") &&
     src.platform.includes("gameLoaded") &&
     src.platform.includes("SDK_GAME_PAUSE") &&
+    src.platform.includes("firstFrameReady") &&
+    src.platform.includes("game?.ready") &&
     src.platform.includes(`${config.pausePrefix}:platform-pause`) &&
     src.game.includes("platform-pause") &&
     src.game.includes("platform-resume");
@@ -213,6 +226,8 @@ function rewardedAdsSafe() {
     src.platform.includes('adState === "rewarded"') &&
     src.platform.includes("SDK_REWARDED_WATCH_COMPLETE") &&
     src.platform.includes("gameDistributionRewardedComplete") &&
+    src.platform.includes("beforeReward") &&
+    src.platform.includes("adViewed") &&
     src.game.includes('requestAd("rewarded"');
 }
 

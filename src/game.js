@@ -47,7 +47,7 @@
     dodges: 0,
     sparks: 0,
     hits: 0,
-    best: readBestScore(),
+    best: 0,
     objects: [],
     particles: [],
     lastTick: 0,
@@ -92,7 +92,7 @@
     const delta = Math.min(0.05, (now - state.lastTick) / 1000 || 0);
     state.lastTick = now;
 
-    if (state.running && !state.paused && !state.over) {
+    if (state.running && !state.paused && !state.platformPaused && !state.over) {
       const focusActive = now < state.focusUntil;
       const speed = focusActive ? state.speed * 0.62 : state.speed;
       state.timeLeft -= delta;
@@ -108,6 +108,7 @@
     }
 
     draw(now);
+    window.NeonLanePlatform.signalFirstFrameReady?.();
     requestAnimationFrame(tick);
   }
 
@@ -423,23 +424,10 @@
     state.particles.push({ x, y: y - 48, text, color, life: 1 });
   }
 
-  function readBestScore() {
-    try {
-      return Math.max(0, Number(localStorage.getItem(bestKey) || 0));
-    } catch {
-      return 0;
-    }
-  }
-
   function saveBestScore(score) {
     const next = Math.max(state.best, Number(score || 0));
     const isNew = next > state.best;
     state.best = next;
-    try {
-      localStorage.setItem(bestKey, String(next));
-    } catch {
-      // Best score is local-only and optional.
-    }
     window.NeonLanePlatform.setStoredBestScore?.(bestKey, next);
     updateHud();
     return { value: next, isNew };
@@ -450,11 +438,6 @@
       const stored = await window.NeonLanePlatform.getStoredBestScore?.(bestKey);
       if (stored === null || stored === undefined) return;
       state.best = Math.max(state.best, Number(stored) || 0);
-      try {
-        localStorage.setItem(bestKey, String(state.best));
-      } catch {
-        // Local best-score cache is optional.
-      }
       updateHud();
     } catch {
       // Platform storage is best-effort; local score remains available.
@@ -544,5 +527,6 @@
     () => reset(true)
   );
   updateHud();
+  window.NeonLanePlatform.signalGameReady?.();
   requestAnimationFrame(tick);
 })();

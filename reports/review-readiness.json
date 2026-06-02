@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-02T17:52:38.669Z",
+  "generatedAt": "2026-06-02T19:41:19.334Z",
   "game": "Neon Lane Dash",
   "liveUrl": "https://neon-lane-dash.pages.dev/",
   "status": "passed",
   "summary": {
-    "checks": 30,
-    "passed": 30,
+    "checks": 33,
+    "passed": 33,
     "failed": 0
   },
   "checks": [
@@ -42,12 +42,12 @@
     {
       "id": "local_best_score",
       "passed": true,
-      "evidence": "Local best-score persistence is present."
+      "evidence": "Best-score persistence is isolated in the platform adapter."
     },
     {
       "id": "platform_best_score_storage",
       "passed": true,
-      "evidence": "Playgama SDK storage is used for best-score sync with local fallback."
+      "evidence": "Playgama and GameSnacks SDK storage are used for best-score sync with local fallback."
     },
     {
       "id": "anonymous_metrics",
@@ -80,6 +80,16 @@
       "evidence": "Clean portal ZIP is present and below the review-size budget."
     },
     {
+      "id": "gamesnacks_package_passed",
+      "passed": true,
+      "evidence": "GameSnacks package passed SDK, storage, no-external-request, and marketing-asset checks."
+    },
+    {
+      "id": "gamesnacks_zip_small",
+      "passed": true,
+      "evidence": "GameSnacks ZIP is present and below the review-size budget."
+    },
+    {
       "id": "standalone_ads_disabled",
       "passed": true,
       "evidence": "Standalone build does not show ads; Playgama SDK context can run certified platform ads."
@@ -97,7 +107,7 @@
     {
       "id": "sdk_adapters_present",
       "passed": true,
-      "evidence": "CrazyGames, Yandex, Playgama, GamePix, and GameDistribution adapters are present."
+      "evidence": "CrazyGames, Yandex, Playgama, GamePix, GameDistribution, and GameSnacks adapters are present."
     },
     {
       "id": "platform_lifecycle_hooks",
@@ -158,6 +168,11 @@
       "id": "release_assets_include_demo",
       "passed": true,
       "evidence": "GitHub release includes the gameplay demo MP4."
+    },
+    {
+      "id": "release_assets_include_gamesnacks_zip",
+      "passed": true,
+      "evidence": "GitHub release includes the GameSnacks ZIP asset."
     }
   ],
   "platformFit": [
@@ -165,7 +180,8 @@
     "Standalone hosting keeps ads disabled, while Playgama builds can run certified interstitial ads at natural run breaks.",
     "Rewarded assists are optional and only granted after platform reward completion callbacks.",
     "External links are hidden when embedded by game platforms.",
-    "A separate clean portal ZIP is available for portals that reject third-party ad SDKs, external links, or remote telemetry."
+    "A separate clean portal ZIP is available for portals that reject third-party ad SDKs, external links, or remote telemetry.",
+    "A separate GameSnacks ZIP is available with GameSnacks SDK storage, ad, audio, score, and lifecycle hooks only."
   ],
   "manualGates": [
     "Developer dashboard signup, email verification, CAPTCHA, legal consent, and payout setup still require the account owner.",
@@ -173,6 +189,7 @@
     "Do not send bank, Alipay, API token, or private credential details by email."
   ],
   "nextSubmissionOrder": [
+    "GameSnacks",
     "CrazyGames",
     "Yandex Games",
     "Playgama",

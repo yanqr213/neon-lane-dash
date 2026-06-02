@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-02T17:58:11.920Z",
+  "generatedAt": "2026-06-02T19:41:12.363Z",
   "releaseUrl": "https://github.com/yanqr213/neon-lane-dash/releases/tag/platform-submission-v1",
   "tag": "platform-submission-v1",
   "assets": [
     {
       "name": "neon-lane-dash-html5.zip",
       "label": "HTML5 ZIP package for itch.io and platform upload",
-      "size": 50838,
+      "size": 55807,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip"
     },
     {
       "name": "neon-lane-dash-portal-clean.zip",
       "label": "clean HTML5 ZIP for portals that ban third-party ad SDKs and external links",
-      "size": 30634,
+      "size": 30326,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip"
     },
     {
@@ -22,21 +22,39 @@
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/clean-portal-package.json"
     },
     {
+      "name": "neon-lane-dash-gamesnacks.zip",
+      "label": "GameSnacks-ready ZIP with game.json, SDK-only adapter, and marketing assets",
+      "size": 1539211,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-gamesnacks.zip"
+    },
+    {
+      "name": "gamesnacks-package.json",
+      "label": "GameSnacks package manifest and upload notes",
+      "size": 717,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/gamesnacks-package.json"
+    },
+    {
+      "name": "gamesnacks-verification.json",
+      "label": "GameSnacks SDK, storage, no-external-request, and image-size verification",
+      "size": 3398,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/gamesnacks-verification.json"
+    },
+    {
       "name": "neon-lane-dash-demo.mp4",
       "label": "8-second vertical gameplay demo MP4",
-      "size": 37329,
+      "size": 38382,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4"
     },
     {
       "name": "neon-lane-dash-crazygames-landscape-video.mp4",
       "label": "CrazyGames landscape preview video MP4",
-      "size": 114487,
+      "size": 116143,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-crazygames-landscape-video.mp4"
     },
     {
       "name": "neon-lane-dash-crazygames-portrait-video.mp4",
       "label": "CrazyGames portrait preview video MP4",
-      "size": 35735,
+      "size": 35292,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-crazygames-portrait-video.mp4"
     },
     {
@@ -96,7 +114,7 @@
     {
       "name": "crazygames-verification.json",
       "label": "multi-platform SDK and ad-safety readiness checks",
-      "size": 706,
+      "size": 766,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/crazygames-verification.json"
     },
     {
@@ -114,13 +132,13 @@
     {
       "name": "review-readiness.md",
       "label": "human-readable platform review readiness report",
-      "size": 3626,
+      "size": 4095,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/review-readiness.md"
     },
     {
       "name": "review-readiness.json",
       "label": "machine-readable platform review readiness report",
-      "size": 5705,
+      "size": 6384,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/review-readiness.json"
     }
   ]

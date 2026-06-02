@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-06-02T19:37:52.368Z",
+  "status": "passed",
+  "zipPackage": "reports\\neon-lane-dash-gamesnacks.zip",
+  "zipBytes": 1539211,
+  "checks": [
+    {
+      "id": "game_json_required_fields",
+      "passed": true,
+      "evidence": "game.json includes name, version, description, genres, developer, marketingAssets, entrypoint, and files."
+    },
+    {
+      "id": "entrypoint_at_root",
+      "passed": true,
+      "evidence": "index.html is the package entrypoint."
+    },
+    {
+      "id": "runtime_files_exist",
+      "passed": true,
+      "evidence": "Every file listed in game.json files exists and stays inside the package."
+    },
+    {
+      "id": "marketing_assets_not_runtime_files",
+      "passed": true,
+      "evidence": "Marketing images are not listed as runtime files."
+    },
+    {
+      "id": "marketing_assets_exist",
+      "passed": true,
+      "evidence": "Required GameSnacks marketing images exist with exact declared dimensions."
+    },
+    {
+      "id": "genres_allowed",
+      "passed": true,
+      "evidence": "Genres use the documented GameSnacks values."
+    },
+    {
+      "id": "orientation_allowed",
+      "passed": true,
+      "evidence": "Orientation uses a documented GameSnacks value."
+    },
+    {
+      "id": "ads_monetization_ready",
+      "passed": true,
+      "evidence": "allowOfflineUse is false so the build can use ad monetization."
+    },
+    {
+      "id": "sdk_game_lifecycle",
+      "passed": true,
+      "evidence": "GameSnacks game lifecycle hooks are present."
+    },
+    {
+      "id": "sdk_ad_interface",
+      "passed": true,
+      "evidence": "GameSnacks ad break and rewarded callbacks are present."
+    },
+    {
+      "id": "sdk_storage_interface",
+      "passed": true,
+      "evidence": "GameSnacks SDK storage is used for score persistence."
+    },
+    {
+      "id": "sdk_audio_score_interface",
+      "passed": true,
+      "evidence": "GameSnacks audio and score interfaces are used."
+    },
+    {
+      "id": "no_browser_storage",
+      "passed": true,
+      "evidence": "Package source avoids browser storage APIs banned by GameSnacks."
+    },
+    {
+      "id": "no_external_calls",
+      "passed": true,
+      "evidence": "Package source has no remote analytics, external API, or network call code."
+    },
+    {
+      "id": "no_external_urls",
+      "passed": true,
+      "evidence": "Package source has no external URLs or outbound links."
+    },
+    {
+      "id": "no_platform_sdk_loaders",
+      "passed": true,
+      "evidence": "GameSnacks package does not include other ad or platform SDK loaders."
+    },
+    {
+      "id": "first_frame_from_game_loop",
+      "passed": true,
+      "evidence": "First-frame signal is emitted from the game loop."
+    },
+    {
+      "id": "ready_from_interactive_state",
+      "passed": true,
+      "evidence": "Ready signal is emitted once the first interactive state is prepared."
+    },
+    {
+      "id": "zip_exists",
+      "passed": true,
+      "evidence": "GameSnacks ZIP exists and is non-empty."
+    }
+  ],
+  "failures": [],
+  "officialRequirementsCovered": [
+    "bundle contains game code, marketing assets, and game.json",
+    "GameSnacks SDK game, ad, audio, score, and storage interfaces are wired",
+    "no localStorage/sessionStorage/IndexedDB/cookie usage",
+    "no external server calls or links",
+    "marketing images meet declared minimum dimensions"
+  ]
+}

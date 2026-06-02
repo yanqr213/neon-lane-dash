@@ -271,7 +271,8 @@ h1 {
 .platform-yandex .external-tool-link,
 .platform-playgama .external-tool-link,
 .platform-gamepix .external-tool-link,
-.platform-gamedistribution .external-tool-link {
+.platform-gamedistribution .external-tool-link,
+.platform-gamesnacks .external-tool-link {
   display: none;
 }
 

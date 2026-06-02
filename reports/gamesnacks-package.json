@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-02T19:37:31.079Z",
+  "status": "passed",
+  "buildDir": "dist-gamesnacks",
+  "zipPackage": "reports\\neon-lane-dash-gamesnacks.zip",
+  "zipBytes": 1539211,
+  "runtimeFiles": [
+    "index.html",
+    "styles.css",
+    "platform.js",
+    "game.js"
+  ],
+  "gameJson": "dist-gamesnacks\\game.json",
+  "uploadNotes": [
+    "Upload this ZIP only to GameSnacks or a GameSnacks-compatible review flow.",
+    "The package replaces all external portal adapters with a GameSnacks-only SDK adapter.",
+    "It contains no localStorage, remote analytics, external links, adsbygoogle injection, or third-party SDK loaders.",
+    "Reward assist is only granted after the rewarded ad viewed callback."
+  ]
+}

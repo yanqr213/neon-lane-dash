@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-02T17:51:28.879Z",
+  "generatedAt": "2026-06-02T19:37:52.563Z",
   "game": "Neon Lane Dash",
   "status": "passed",
   "buildDir": "dist-portal-clean",
   "zipPackage": "reports\\neon-lane-dash-portal-clean.zip",
   "tarGzPackage": "reports\\neon-lane-dash-portal-clean.tar.gz",
-  "zipBytes": 30634,
-  "tarGzBytes": 8525,
+  "zipBytes": 30326,
+  "tarGzBytes": 8459,
   "files": [
     "build-info.json",
     "game.js",

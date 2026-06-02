@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T17:51:22.385Z",
+  "generatedAt": "2026-06-02T19:36:44.087Z",
   "status": "passed",
   "checks": [
     "CrazyGames SDK v3 dynamic loader",
@@ -12,6 +12,7 @@
     "Playgama rewarded completion and lifecycle hooks",
     "GamePix lifecycle/ping hooks",
     "GameDistribution gameId, pause, resume, and rewarded hooks",
+    "GameSnacks game, ad, storage, audio, and score hooks",
     "explicit ad gating",
     "no watch-ad copy in Basic Launch build",
     "external link hidden in platform contexts",

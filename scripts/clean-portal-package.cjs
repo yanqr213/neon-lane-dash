@@ -104,7 +104,7 @@ function writeCleanIndex() {
 function writeCleanStyles() {
   const filePath = path.join(out, "styles.css");
   let css = fs.readFileSync(filePath, "utf8");
-  css = css.replace(/\n\.platform-crazygames \.external-tool-link,\n\.platform-yandex \.external-tool-link,\n\.platform-playgama \.external-tool-link,\n\.platform-gamepix \.external-tool-link,\n\.platform-gamedistribution \.external-tool-link \{\n\s*display: none;\n\}/, "");
+  css = css.replace(/\n\.platform-crazygames \.external-tool-link,\n\.platform-yandex \.external-tool-link,\n\.platform-playgama \.external-tool-link,\n\.platform-gamepix \.external-tool-link,\n\.platform-gamedistribution \.external-tool-link,\n\.platform-gamesnacks \.external-tool-link \{\n\s*display: none;\n\}/, "");
   fs.writeFileSync(filePath, css);
 }
 
@@ -164,7 +164,7 @@ function verifyCleanFiles(files) {
   const failures = [];
   const all = files.map((file) => [file, fs.readFileSync(path.join(out, file), "utf8")]);
   const source = all.map(([, text]) => text).join("\n");
-  add("no_external_sdk_urls", !/crazygames|yandex\.ru\/games\/sdk|playgama|gamepix|gamedistribution|gdsdk/i.test(source), "No third-party game/ad provider URL or provider string remains.");
+  add("no_external_sdk_urls", !/crazygames|yandex\.ru\/games\/sdk|playgama|gamepix|gamedistribution|gamesnacks|gdsdk/i.test(source), "No third-party game/ad provider URL or provider string remains.");
   add("no_remote_tracking", !/sendBeacon|fetch\(|\/api\/event|\/api\/metrics/i.test(source), "No remote metrics or server API calls remain.");
   add("no_external_hrefs", !/href="https?:\/\//i.test(source), "No external hyperlinks remain in the uploaded game package.");
   add("no_ad_runtime_calls", !/requestAd\("rewarded"|requestAd\("interstitial"|showRewarded|showFullscreenAdv|showAd\(/.test(source), "No ad runtime calls remain in clean game logic.");

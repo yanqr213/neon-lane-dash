@@ -23,6 +23,7 @@ async function main() {
     const releaseHtml = await fetchText(report.releaseUrl);
     if (!releaseHtml.includes("Neon Lane Dash Platform Submission Pack")) failures.push("Release page missing title.");
     if (!releaseHtml.includes("neon-lane-dash-html5.zip")) failures.push("Release page missing ZIP asset.");
+    if (!releaseHtml.includes("neon-lane-dash-gamesnacks.zip")) failures.push("Release page missing GameSnacks ZIP asset.");
     if (!releaseHtml.includes("neon-lane-dash-demo.mp4")) failures.push("Release page missing demo MP4 asset.");
     if (!releaseHtml.includes("neon-lane-dash-cover-16x9.png")) failures.push("Release page missing cover image asset.");
     if (!releaseHtml.includes("neon-lane-dash-icon-512.png")) failures.push("Release page missing icon asset.");
