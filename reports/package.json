@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T15:32:31.551Z",
+  "generatedAt": "2026-06-02T15:56:33.448Z",
   "tarGzPackage": "reports\\neon-lane-dash-html5.tar.gz",
   "zipPackage": "reports\\neon-lane-dash-html5.zip",
   "tarGzBytes": 12086,
@@ -14,9 +14,10 @@
     "styles.css"
   ],
   "uploadNotes": [
-    "For itch.io HTML5, upload the ZIP; it contains index.html at the archive root.",
-    "For CrazyGames, upload the dist contents or ZIP according to the developer dashboard prompt.",
-    "For Yandex Games, use the static build as the web archive and keep SDK-specific ads disabled until accepted.",
-    "Standalone build has no forced ad display; rewarded hooks are adapter-only."
+    "For hosted HTML5 portals, upload the ZIP; it contains index.html at the archive root and no server dependency.",
+    "Primary queue: CrazyGames, Yandex Games, Playgama, GamePix, then GameDistribution after dashboard gameId/legal gates.",
+    "CrazyGames, Yandex, Playgama, GamePix, and GameDistribution adapters are present but gated to platform contexts.",
+    "Standalone build has no forced ad display; ads require platform SDK readiness plus the explicit ads=1 review flag.",
+    "Attach reports/review-readiness.md or reports/review-readiness.json when a dashboard allows extra review notes."
   ]
 }
