@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T15:32:31.348Z",
+  "generatedAt": "2026-06-02T16:16:03.792Z",
   "game": {
     "title": "Neon Lane Dash",
     "shortDescription": "Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.",
@@ -49,6 +49,8 @@
   "uploadPackages": {
     "distFolder": "dist/",
     "itchIoZip": "reports/neon-lane-dash-html5.zip",
+    "cleanPortalZip": "reports/neon-lane-dash-portal-clean.zip",
+    "releaseCleanPortalZip": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip",
     "releaseZip": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip",
     "tarGzFallback": "reports/neon-lane-dash-html5.tar.gz"
   },

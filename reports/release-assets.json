@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T16:04:46.355Z",
+  "generatedAt": "2026-06-02T16:19:21.871Z",
   "releaseUrl": "https://github.com/yanqr213/neon-lane-dash/releases/tag/platform-submission-v1",
   "tag": "platform-submission-v1",
   "assets": [
@@ -10,6 +10,18 @@
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip"
     },
     {
+      "name": "neon-lane-dash-portal-clean.zip",
+      "label": "clean HTML5 ZIP for portals that ban third-party ad SDKs and external links",
+      "size": 29894,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip"
+    },
+    {
+      "name": "clean-portal-package.json",
+      "label": "clean portal package verification and upload notes",
+      "size": 2184,
+      "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/clean-portal-package.json"
+    },
+    {
       "name": "neon-lane-dash-demo.mp4",
       "label": "8-second vertical gameplay demo MP4",
       "size": 37172,
@@ -18,25 +30,25 @@
     {
       "name": "platform-submission.md",
       "label": "copy-ready platform submission notes",
-      "size": 2327,
+      "size": 2656,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission.md"
     },
     {
       "name": "platform-submission.json",
       "label": "machine-readable platform submission fields",
-      "size": 7818,
+      "size": 8031,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission.json"
     },
     {
       "name": "platform-submission-copy.md",
       "label": "field-by-field copy pack for CrazyGames, Yandex Games, Playgama, GamePix, GameDistribution, and fallback portals",
-      "size": 24883,
+      "size": 30062,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission-copy.md"
     },
     {
       "name": "platform-submission-copy.json",
       "label": "machine-readable submission copy pack",
-      "size": 27645,
+      "size": 33384,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/platform-submission-copy.json"
     },
     {
@@ -90,13 +102,13 @@
     {
       "name": "review-readiness.md",
       "label": "human-readable platform review readiness report",
-      "size": 3148,
+      "size": 3495,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/review-readiness.md"
     },
     {
       "name": "review-readiness.json",
       "label": "machine-readable platform review readiness report",
-      "size": 5036,
+      "size": 5512,
       "downloadUrl": "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/review-readiness.json"
     }
   ]

@@ -1,6 +1,6 @@
 # Neon Lane Dash Platform Submission
 
-Generated: 2026-06-02T15:32:31.348Z
+Generated: 2026-06-02T16:16:03.792Z
 
 ## Game
 
@@ -49,5 +49,9 @@ Rewarded placements may be used only for optional focus assist, retry, revive, o
 
 - distFolder: dist/
 - itchIoZip: reports/neon-lane-dash-html5.zip
+- cleanPortalZip: reports/neon-lane-dash-portal-clean.zip
+- releaseCleanPortalZip: https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip
 - releaseZip: https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip
 - tarGzFallback: reports/neon-lane-dash-html5.tar.gz
+
+Clean portal package: use releaseCleanPortalZip for portals that reject third-party ad SDKs, external links, or remote tracking.

@@ -1,6 +1,6 @@
 # Neon Lane Dash Submission Copy Pack
 
-Generated: 2026-06-02T15:56:33.631Z
+Generated: 2026-06-02T16:16:04.378Z
 
 ## No-domain decision
 
@@ -466,7 +466,159 @@ Rewarded placements may be used only for optional focus assist, retry, revive, o
 
 Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
 
-## 7. GameDistribution
+## 7. Kongregate
+
+Submission URL: https://www.kongregate.com/games/new
+
+Monetization expectation: Kongregate-style uploads can be useful for no-domain browser proof and potential platform-side ads/revenue share, but they are conservative about third-party ads and sponsorships inside uploaded games.
+
+Source notes:
+
+- Use the clean portal ZIP, not the SDK adapter ZIP.
+- The clean portal ZIP removes third-party ad SDKs, external links, sponsorship CTAs, and remote tracking while preserving local best score and gameplay.
+- Use portal-managed ads or revenue share only after the host accepts the game.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+Clean portal build note: no third-party ad SDKs, no external links, no login, no in-app purchases, and no remote tracking calls are included in the clean ZIP.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### complianceNote
+
+Clean static HTML5 package with index.html at archive root, local gameplay only, no ad inducement, no gambling, and no personal data collection.
+
+## 8. Newgrounds
+
+Submission URL: https://www.newgrounds.com/projects/games
+
+Monetization expectation: Newgrounds can host HTML5 games and provide discovery/community feedback. Treat it as a clean feedback and possible ad-share route, not as the first revenue guarantee.
+
+Source notes:
+
+- Use the clean portal ZIP with no third-party ad SDKs, external links, or remote tracking.
+- The clean portal ZIP removes third-party ad SDKs, external links, sponsorship CTAs, and remote tracking while preserving local best score and gameplay.
+- Use portal-managed ads or revenue share only after the host accepts the game.
+
+Copy fields:
+
+### title
+
+Neon Lane Dash
+
+### shortDescription
+
+Switch lanes, collect neon sparks, and dodge blockers in fast 45-second arcade runs.
+
+### longDescription
+
+Neon Lane Dash is a lightweight HTML5 reflex game built for short browser sessions. Players move between three neon lanes, collect sparks to build combo, dodge blockers, and use a short focus ability to slow the road for a moment. It is readable in seconds, works with keyboard or touch controls, and is packaged as a standalone zero-domain browser game for platform-ad validation.
+
+Clean portal build note: no third-party ad SDKs, no external links, no login, no in-app purchases, and no remote tracking calls are included in the clean ZIP.
+
+### genre
+
+Arcade, Reflex, Runner
+
+### tags
+
+html5, arcade, runner, reflex, lane, casual, browser, mobile-friendly
+
+### controls
+
+Keyboard: A/D or arrow keys to switch lanes, Space or F to use focus. Mouse or touch: tap the left and right lane buttons; tap Focus for a brief slow-road assist.
+
+### deviceSupport
+
+Desktop browser, Mobile browser, Tablet browser
+
+### language
+
+English
+
+### contentRating
+
+Everyone / no violence / no gambling / no personal data collection
+
+### uploadPackage
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip
+
+### livePreview
+
+https://neon-lane-dash.pages.dev/
+
+### icon512
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-icon-512.png
+
+### cover16x9
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-cover-16x9.png
+
+### demoVideo
+
+https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-demo.mp4
+
+### complianceNote
+
+Clean static HTML5 package with index.html at archive root, local gameplay only, no ad inducement, no gambling, and no personal data collection.
+
+## 9. GameDistribution
 
 Submission URL: https://gamedistribution.com/developers/
 
@@ -546,7 +698,7 @@ Rewarded placements may be used only for optional focus assist, retry, revive, o
 
 Ad-safe review build with no fake rewards, no gambling, no personal data collection, and external links hidden in platform contexts where required.
 
-## 8. Poki
+## 10. Poki
 
 Submission URL: https://developers.poki.com/
 
@@ -700,6 +852,7 @@ Switch lanes, collect sparks, dodge blockers.
 ## Validation gate
 
 - Use the HTML5 ZIP with index.html at the archive root.
+- Use the clean portal ZIP for portals that reject third-party ad SDKs, external links, sponsorships, or remote tracking.
 - Keep standalone ads disabled until the platform accepts or requests monetization activation.
 - Do not use ad-engagement inducement copy in titles, buttons, screenshots, or descriptions.
 - Use platform SDK lifecycle hooks for loading and gameplay state.

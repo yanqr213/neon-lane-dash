@@ -40,6 +40,8 @@ const submission = {
   uploadPackages: {
     distFolder: "dist/",
     itchIoZip: "reports/neon-lane-dash-html5.zip",
+    cleanPortalZip: "reports/neon-lane-dash-portal-clean.zip",
+    releaseCleanPortalZip: "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-portal-clean.zip",
     releaseZip: "https://github.com/yanqr213/neon-lane-dash/releases/download/platform-submission-v1/neon-lane-dash-html5.zip",
     tarGzFallback: "reports/neon-lane-dash-html5.tar.gz",
   },
@@ -177,6 +179,8 @@ function renderMarkdown(data) {
     "## Upload Packages",
     "",
     ...Object.entries(data.uploadPackages).map(([key, value]) => `- ${key}: ${value}`),
+    "",
+    "Clean portal package: use releaseCleanPortalZip for portals that reject third-party ad SDKs, external links, or remote tracking.",
     "",
   ].join("\n");
 }
